@@ -1,378 +1,1026 @@
-﻿[2016.03.22-10.49.05:033][  0]Log file open, 03/22/16 11:49:05
-[2016.03.22-10.49.05:033][  0]LogInit:Display: Running engine for game: RunGameProto
-[2016.03.22-10.49.05:033][  0]LogPlatformFile: Not using cached read wrapper
-[2016.03.22-10.49.05:033][  0]LogInit:Display: RandInit(1892807833) SRandInit(1892807834).
-[2016.03.22-10.49.05:033][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
-[2016.03.22-10.49.05:033][  0]LogStats: Stats thread started at 0.077012
-[2016.03.22-10.49.05:033][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
-[2016.03.22-10.49.05:033][  0]LogInit: API Version: 2758231
-[2016.03.22-10.49.05:033][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
-[2016.03.22-10.49.05:033][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
-[2016.03.22-10.49.05:033][  0]LogInit: Build Configuration: Development
-[2016.03.22-10.49.05:033][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
-[2016.03.22-10.49.05:033][  0]LogInit: Command line: -EpicPortal 
-[2016.03.22-10.49.05:033][  0]LogInit: Base directory: D:/Programme/Epic Games/4.10/Engine/Binaries/Win64/
-[2016.03.22-10.49.05:033][  0]LogInit: Rocket: 1
-[2016.03.22-10.49.05:108][  0]LogInit: Using libcurl 7.41.0
-[2016.03.22-10.49.05:108][  0]LogInit:  - built for x86_64-pc-win32
-[2016.03.22-10.49.05:108][  0]LogInit:  - supports SSL with WinSSL
-[2016.03.22-10.49.05:108][  0]LogInit:  - other features:
-[2016.03.22-10.49.05:108][  0]LogInit:      CURL_VERSION_SSL
-[2016.03.22-10.49.05:108][  0]LogInit:      CURL_VERSION_IPV6
-[2016.03.22-10.49.05:108][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2016.03.22-10.49.05:108][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2016.03.22-10.49.05:108][  0]LogInit:      CURL_VERSION_IDN
-[2016.03.22-10.49.05:108][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2016.03.22-10.49.05:108][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-[2016.03.22-10.49.05:108][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2016.03.22-10.49.05:108][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2016.03.22-10.49.05:108][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-[2016.03.22-10.49.05:173][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2016.03.22-10.49.05:180][  0]LogInit: Object subsystem initialized
-[2016.03.22-10.49.05:181][  0]LogInit: Selected Device Profile: [Windows]
-[2016.03.22-10.49.05:181][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.03.22-10.49.05:208][  0]LogInit: Computer: MUHAMMED
-[2016.03.22-10.49.05:208][  0]LogInit: User: Mkanzildiy
-[2016.03.22-10.49.05:208][  0]LogInit: CPU Page size=4096, Cores=4
-[2016.03.22-10.49.05:208][  0]LogInit: High frequency timer resolution =3.906243 MHz
-[2016.03.22-10.49.05:208][  0]LogMemory: Memory total: Physical=7.8GB (8GB approx)
-[2016.03.22-10.49.05:208][  0]LogMemory: Platform Memory Stats for Windows
-[2016.03.22-10.49.05:208][  0]LogMemory: Process Physical Memory: 56.20 MB used, 56.20 MB peak
-[2016.03.22-10.49.05:208][  0]LogMemory: Process Virtual Memory: 58.72 MB used, 58.72 MB peak
-[2016.03.22-10.49.05:208][  0]LogMemory: Physical Memory: 6048.01 MB used, 8028.31 MB total
-[2016.03.22-10.49.05:208][  0]LogMemory: Virtual Memory: 385.79 MB used, 134217728.00 MB total
-[2016.03.22-10.49.05:511][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2016.03.22-10.49.06:156][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 970 (Feature Level 11_0)
-[2016.03.22-10.49.06:156][  0]LogD3D11RHI: Adapter has 4007MB of dedicated video memory, 0MB of dedicated system memory, and 4014MB of shared system memory, 2 output[s]
-[2016.03.22-10.49.06:168][  0]LogD3D11RHI: Found D3D11 adapter 1: Intel(R) HD Graphics 4600 (Feature Level 11_0)
-[2016.03.22-10.49.06:168][  0]LogD3D11RHI: Adapter has 112MB of dedicated video memory, 0MB of dedicated system memory, and 4014MB of shared system memory, 0 output[s]
-[2016.03.22-10.49.06:170][  0]LogD3D11RHI: Found D3D11 adapter 2: Microsoft Basic Render Driver (Feature Level 11_0)
-[2016.03.22-10.49.06:170][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 4014MB of shared system memory, 0 output[s]
-[2016.03.22-10.49.06:170][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2016.03.22-10.49.06:174][  0]LogD3D11RHI: !Direct3DDevice
-[2016.03.22-10.49.06:174][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2016.03.22-10.49.06:196][  0]LogD3D11RHI: Async texture creation enabled
-[2016.03.22-10.49.06:211][  0]LogShaderCompilers: Guid format shader working directory is -42 characters bigger than the processId version (../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Intermediate/Shaders/WorkingDirectory/6688/).
-[2016.03.22-10.49.06:211][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/MKANZI~1/AppData/Local/Temp/UnrealShaderWorkingDir/A40E0CC445C1666B1C1298A867F9153C/'.
-[2016.03.22-10.49.06:211][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.03.22-10.49.07:920][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.03.22-10.49.07:939][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.03.22-10.49.07:976][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.03.22-10.49.08:035][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.03.22-10.49.08:069][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.03.22-10.49.08:113][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.03.22-10.49.08:145][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.03.22-10.49.08:162][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.03.22-10.49.08:183][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.03.22-10.49.08:222][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.03.22-10.49.08:268][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.03.22-10.49.08:321][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.03.22-10.49.08:321][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.03.22-10.49.08:355][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.03.22-10.49.08:494][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.03.22-10.49.08:568][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.03.22-10.49.08:650][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.03.22-10.49.08:676][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.03.22-10.49.08:676][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.03.22-10.49.08:951][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.03.22-10.49.09:136][  0]LogDerivedDataCache: Loaded boot cache 0.18s 41MB C:/Users/Mkanzildiy/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.03.22-10.49.09:136][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Mkanzildiy/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
-[2016.03.22-10.49.09:136][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.03.22-10.49.09:136][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.03.22-10.49.09:136][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.03.22-10.49.09:136][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.03.22-10.49.09:478][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.03.22-10.49.09:503][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Mkanzildiy/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.03.22-10.49.16:382][  0]LogInit: Selected Device Profile: [Windows]
-[2016.03.22-10.49.16:385][  0]LogContentStreaming: Texture pool size is 0.000000MB
-[2016.03.22-10.49.16:537][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.03.22-10.49.16:537][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.03.22-10.49.17:020][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.03.22-10.49.34:981][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.03.22-10.49.35:308][  0]LogAssetRegistry: FAssetRegistry took 0.0113 seconds to start up
-[2016.03.22-10.49.35:799][  0]SourceControl: Info Source control is disabled
-[2016.03.22-10.49.35:862][  0]SourceControl: Info Source control is disabled
-[2016.03.22-10.49.35:883][  0]SourceControl: Info Source control is disabled
-[2016.03.22-10.49.35:915][  0]SourceControl: Info Source control is disabled
-[2016.03.22-10.49.36:919][  0]LogObj: 28633 objects as part of root set at end of initial load.
-[2016.03.22-10.49.36:919][  0]LogUObjectAllocator: 6099752 out of 0 bytes used by permanent object pool.
-[2016.03.22-10.49.37:083][  0]LogEngine: Initializing Engine...
-[2016.03.22-10.49.37:085][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.03.22-10.49.37:105][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2016.03.22-10.49.37:227][  0]LogAIModule: Creating AISystem for world NewWorld
-[2016.03.22-10.49.37:236][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.03.22-10.49.37:250][  0]LogInit: FAudioDevice initialized.
-[2016.03.22-10.49.37:272][  0]LogDerivedDataCache: Saved boot cache 0.02s 41MB C:/Users/Mkanzildiy/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.03.22-10.49.37:277][  0]LogInit: Texture streaming: Enabled
-[2016.03.22-10.49.37:330][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
-[2016.03.22-10.49.37:330][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.4-2872498+++depot+UE4-Releases+4.10
-[2016.03.22-10.49.37:330][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 2fe8d6d2492a36a1f63964be9bcfb4ac|2282cbabb9f64277a44e3efe37a572bc|c4bdbde8-8efc-4f11-82bd-8377b323bc1a
-[2016.03.22-10.49.37:330][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
-[2016.03.22-10.49.37:372][  0]LogInit: Transaction tracking system initialized
-[2016.03.22-10.49.37:547][  0]BlueprintLog: New page: Editor Load
-[2016.03.22-10.49.38:244][  0]LocalizationService: Info Localization service is disabled
-[2016.03.22-10.49.38:897][  0]LogConsoleResponse:Display: 
-[2016.03.22-10.49.39:967][  0]LogFileCache: Scanning file cache for directory 'D:/Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/' took 0.02s
-[2016.03.22-10.49.39:967][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2016.03.22-10.49.40:542][  0]SourceControl: Info Source control is disabled
-[2016.03.22-10.49.40:567][  0]LightingResults: New page: Lighting Build
-[2016.03.22-10.49.40:569][  0]MapCheck: New page: Map Check
-[2016.03.22-10.49.40:569][  0]LightingResults: New page: Lighting Build
-[2016.03.22-10.49.40:578][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000226A58FBB00
-[2016.03.22-10.49.43:563][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.03.22-10.49.43:893][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.03.22-10.49.43:907][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.03.22-10.49.43:965][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 57.814ms to complete.
-[2016.03.22-10.49.43:965][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 3.422
-[2016.03.22-10.49.44:986][  0]LogCollectionManager: Loaded 0 collections in 0.002271 seconds
-[2016.03.22-10.49.45:155][  0]LogFileCache: Scanning file cache for directory 'D:/Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/Collections/' took 0.01s
-[2016.03.22-10.49.45:155][  0]LogFileCache: Scanning file cache for directory 'D:/Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/Developers/Mkanzildiy/Collections/' took 0.01s
-[2016.03.22-10.49.45:155][  0]LogFileCache: Scanning file cache for directory 'D:/Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/Collections/' took 0.01s
-[2016.03.22-10.49.45:155][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
-[2016.03.22-10.49.45:165][  0]LogContentBrowser: Native class hierarchy populated in 0.0072 seconds. Added 1893 classes and 338 folders.
-[2016.03.22-10.49.45:356][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2016.03.22-10.49.46:482][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2016.03.22-10.49.46:625][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
-[2016.03.22-10.49.47:167][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.03.22-10.49.47:336][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2016.03.22-10.49.47:425][  0]LogLoad: Full Startup: 43.07 seconds (BP compile: 0.53 seconds)
-[2016.03.22-10.49.47:768][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.03.22-10.49.48:286][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2016.03.22-10.49.49:454][  0]LogRenderer: Reallocating scene render targets to support 860x416 (Frame:2).
-[2016.03.22-10.49.50:306][  3]LogAssetRegistry: Asset discovery search completed in 15.0096 seconds
-[2016.03.22-10.49.50:306][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2016.03.22-10.49.50:306][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000023 seconds (updated 0 objects)
-[2016.03.22-10.49.52:382][150]LogRenderer: Reallocating scene render targets to support 1208x572 (Frame:100).
-[2016.03.22-10.49.58:902][863]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2016.03.22-10.49.58:999][863]Cmd: MAP LOAD FILE="../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Maps/RunBlankMode.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.03.22-10.49.59:018][863]LightingResults: New page: Lighting Build
-[2016.03.22-10.49.59:030][863]LoadErrors: New page: Loading map: RunBlankMode.umap
-[2016.03.22-10.49.59:076][863]MapCheck: New page: Map Check
-[2016.03.22-10.49.59:076][863]LightingResults: New page: Lighting Build
-[2016.03.22-10.49.59:090][863]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000226AB798E00
-[2016.03.22-10.49.59:171][863]LogAIModule: Creating AISystem for world RunBlankMode
-[2016.03.22-10.49.59:263][863]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.03.22-10.49.59:308][863]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.03.22-10.49.59:348][863]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 39.398ms to complete.
-[2016.03.22-10.49.59:348][863]LogFileHelpers: Loading map 'RunBlankMode' took 0.373
-[2016.03.22-10.50.01:581][107]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.03.22-10.50.01:611][107]PIE: New page: PIE session: RunBlankMode (Mar 22, 2016, 12:50:01 PM)
-[2016.03.22-10.50.01:624][107]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
-[2016.03.22-10.50.01:646][107]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021663s)
-[2016.03.22-10.50.01:647][107]LogAIModule: Creating AISystem for world RunBlankMode
-[2016.03.22-10.50.01:647][107]LogPlayLevel: PIE: World Init took: (0.000789s)
-[2016.03.22-10.50.01:647][107]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.023567s)
-[2016.03.22-10.50.01:657][107]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2016.03.22-10.50.01:673][107]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.03.22-10.50.01:683][107]LogInit: FAudioDevice initialized.
-[2016.03.22-10.50.03:206][107]LogWorld: Game class is 'RunGameMode_C'
-[2016.03.22-10.50.03:333][107]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-11.50.03
-[2016.03.22-10.50.03:334][107]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.03.22-10.50.03:342][107]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.03.22-10.50.03:352][107]LogWorld: Bringing up level for play took: 0.020674
-[2016.03.22-10.50.03:806][107]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode 1.6
-[2016.03.22-10.50.04:292][108]LoadErrors:Error: Error /Game/ThirdPersonBP/UMG/RunHUD : Failed import for IntProperty /Game/ThirdPersonBP/Blueprints/RunCharacter.RunCharacter_C:TotalCoins
-[2016.03.22-10.50.04:313][108]LogCharacterMovement:Warning: GetSimulationTimeStep() - Max iterations 8 hit while remaining time 0.064872 > MaxSimulationTimeStep (0.050) for 'RunCharacter_C_4'
-[2016.03.22-10.50.07:572][438]Cmd: RestartLevel
-[2016.03.22-10.50.07:784][439]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
-[2016.03.22-10.50.07:784][439]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
-[2016.03.22-10.50.07:870][439]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement_GEN_VARIABLE) Not registered. Aborting.
-[2016.03.22-10.50.07:890][439]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000226B7130220
-[2016.03.22-10.50.07:890][439]Cmd: MEM
-[2016.03.22-10.50.07:903][439]LogMemory: Platform Memory Stats for Windows
-[2016.03.22-10.50.07:903][439]LogMemory: Process Physical Memory: 776.62 MB used, 780.48 MB peak
-[2016.03.22-10.50.07:903][439]LogMemory: Process Virtual Memory: 1260.05 MB used, 1282.74 MB peak
-[2016.03.22-10.50.07:903][439]LogMemory: Physical Memory: 6368.97 MB used, 8028.31 MB total
-[2016.03.22-10.50.07:903][439]LogMemory: Virtual Memory: 2020.35 MB used, 134217728.00 MB total
-[2016.03.22-10.50.07:916][439]LogMemory: 
-[2016.03.22-10.50.07:916][439]Allocator Stats for TBB: (not implemented)
-[2016.03.22-10.50.07:919][439]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
-[2016.03.22-10.50.07:920][439]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001011s)
-[2016.03.22-10.50.07:921][439]LogAIModule: Creating AISystem for world RunBlankMode
-[2016.03.22-10.50.07:921][439]LogPlayLevel: PIE: World Init took: (0.000738s)
-[2016.03.22-10.50.07:921][439]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.001935s)
-[2016.03.22-10.50.07:921][439]LogWorld: Game class is 'RunGameMode_C'
-[2016.03.22-10.50.07:942][439]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-11.50.07
-[2016.03.22-10.50.07:958][439]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.03.22-10.50.07:958][439]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.03.22-10.50.07:958][439]LogWorld: Bringing up level for play took: 0.016677
-[2016.03.22-10.50.17:981][632]Cmd: RestartLevel
-[2016.03.22-10.50.17:989][633]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
-[2016.03.22-10.50.17:989][633]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
-[2016.03.22-10.50.18:005][633]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000022699110900
-[2016.03.22-10.50.18:005][633]Cmd: MEM
-[2016.03.22-10.50.18:016][633]LogMemory: Platform Memory Stats for Windows
-[2016.03.22-10.50.18:016][633]LogMemory: Process Physical Memory: 755.40 MB used, 784.05 MB peak
-[2016.03.22-10.50.18:016][633]LogMemory: Process Virtual Memory: 1222.20 MB used, 1374.49 MB peak
-[2016.03.22-10.50.18:016][633]LogMemory: Physical Memory: 6345.62 MB used, 8028.31 MB total
-[2016.03.22-10.50.18:016][633]LogMemory: Virtual Memory: 2071.72 MB used, 134217728.00 MB total
-[2016.03.22-10.50.18:016][633]LogMemory: 
-[2016.03.22-10.50.18:016][633]Allocator Stats for TBB: (not implemented)
-[2016.03.22-10.50.18:016][633]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
-[2016.03.22-10.50.18:017][633]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001086s)
-[2016.03.22-10.50.18:018][633]LogAIModule: Creating AISystem for world RunBlankMode
-[2016.03.22-10.50.18:018][633]LogPlayLevel: PIE: World Init took: (0.000741s)
-[2016.03.22-10.50.18:018][633]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002012s)
-[2016.03.22-10.50.18:018][633]LogWorld: Game class is 'RunGameMode_C'
-[2016.03.22-10.50.18:020][633]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-11.50.18
-[2016.03.22-10.50.18:020][633]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.03.22-10.50.18:020][633]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.03.22-10.50.18:020][633]LogWorld: Bringing up level for play took: 0.001204
-[2016.03.22-10.50.23:758][279]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000226ABA1F9C0
-[2016.03.22-10.50.48:427][636]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2016.03.22-10.50.49:136][636]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 107 classes and 0 folders.
-[2016.03.22-10.51.03:568][912]LogRenderer: Reallocating scene render targets to support 1280x712 (Frame:13885).
-[2016.03.22-10.51.19:824][812]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2016.03.22-10.51.19:824][812]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement_GEN_VARIABLE) Not registered. Aborting.
-[2016.03.22-10.51.20:142][812]LogSavePackage: Save=77.766029ms
-[2016.03.22-10.51.20:142][812]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_RightCorner716CEDC443DC91A35FDE5D94CFAB2620.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_RightCorner.uasset'
-[2016.03.22-10.51.20:148][812]LogSavePackage: Total save time: 129.233383ms
-[2016.03.22-10.51.20:148][812]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_RightCorner.uasset
-[2016.03.22-10.51.20:698][875]BlueprintLog: New page: Compile BP_FloorTIle_RightCorner
-[2016.03.22-10.51.20:976][875]BlueprintEditorCompileResults: Info [0136.61] Compile of BP_FloorTIle_RightCorner successful! [in 262 ms]
-[2016.03.22-10.52.56:830][728]LogSavePackage: Save=37.712708ms
-[2016.03.22-10.52.56:830][728]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_RightCorner29176A38405C62D44957489B3CEE93A9.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_RightCorner.uasset'
-[2016.03.22-10.52.56:833][728]LogSavePackage: Total save time: 329.660747ms
-[2016.03.22-10.52.56:833][728]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_RightCorner.uasset
-[2016.03.22-10.52.56:990][728]LogSavePackage: Save=71.960709ms
-[2016.03.22-10.52.56:990][728]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle764AB3404B2CEBF794BF018A7C58757D.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset'
-[2016.03.22-10.52.56:997][728]LogSavePackage: Total save time: 144.215044ms
-[2016.03.22-10.52.56:997][728]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset
-[2016.03.22-10.53.37:907][866]LogEditorTransaction: Undo Set actor scale
-[2016.03.22-10.53.38:715][933]Cmd: TRANSACTION UNDO
-[2016.03.22-10.53.38:715][933]LogEditorTransaction: Undo Set actor scale
-[2016.03.22-10.53.39:166][985]Cmd: TRANSACTION UNDO
-[2016.03.22-10.53.39:166][985]LogEditorTransaction: Undo Set actor scale
-[2016.03.22-10.53.39:714][ 48]Cmd: TRANSACTION UNDO
-[2016.03.22-10.53.39:714][ 48]LogEditorTransaction: Undo Modify Component(s)
-[2016.03.22-10.53.40:193][101]Cmd: TRANSACTION UNDO
-[2016.03.22-10.53.40:193][101]LogEditorTransaction: Undo Add Component
-[2016.03.22-10.53.46:770][876]LogEditorTransaction: Redo Add Component
-[2016.03.22-10.54.36:023][345]BlueprintLog: New page: Compile BP_FloorTIle_RightCorner
-[2016.03.22-10.54.36:288][345]BlueprintEditorCompileResults: Info [0331.93] Compile of BP_FloorTIle_RightCorner successful! [in 266 ms]
-[2016.03.22-10.54.36:795][394]LogSavePackage: Save=23.531050ms
-[2016.03.22-10.54.36:795][394]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_RightCornerC73741A643EF3771EC9188A77BEA773E.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_RightCorner.uasset'
-[2016.03.22-10.54.36:797][394]LogSavePackage: Total save time: 27.549490ms
-[2016.03.22-10.54.36:797][394]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_RightCorner.uasset
-[2016.03.22-10.55.13:967][679]LogSavePackage: Save=21.403431ms
-[2016.03.22-10.55.13:967][679]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_RightCornerB501761041D507A30BB81AA0116CABEE.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_RightCorner.uasset'
-[2016.03.22-10.55.13:972][679]LogSavePackage: Total save time: 27.378738ms
-[2016.03.22-10.55.13:972][679]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_RightCorner.uasset
-[2016.03.22-10.55.14:866][786]BlueprintLog: New page: Compile BP_FloorTIle_RightCorner
-[2016.03.22-10.55.14:938][786]BlueprintEditorCompileResults: Info [0370.58] Compile of BP_FloorTIle_RightCorner successful! [in 71 ms]
-[2016.03.22-10.55.15:454][836]LogSavePackage: Save=45.326416ms
-[2016.03.22-10.55.15:454][836]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_RightCornerAC25D7D04097D1F5985509AA2E0826A2.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_RightCorner.uasset'
-[2016.03.22-10.55.15:455][836]LogSavePackage: Total save time: 48.099928ms
-[2016.03.22-10.55.15:455][836]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_RightCorner.uasset
-[2016.03.22-10.55.47:355][574]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2016.03.22-10.55.47:355][574]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement_GEN_VARIABLE) Not registered. Aborting.
-[2016.03.22-10.55.47:383][574]LogMetaData: Removing '/Game/ThirdPersonBP/Blueprints/BP_FloorTIle_LeftCorner.SKEL_BP_FloorTIle_LeftCorner_C' ref from Metadata '/Game/ThirdPersonBP/Blueprints/BP_FloorTIle_RightCorner2.PackageMetaData'
-[2016.03.22-10.55.47:383][574]LogMetaData: Removing '/Game/ThirdPersonBP/Blueprints/BP_FloorTIle_LeftCorner.BP_FloorTIle_LeftCorner_C' ref from Metadata '/Game/ThirdPersonBP/Blueprints/BP_FloorTIle_RightCorner2.PackageMetaData'
-[2016.03.22-10.55.47:467][574]LogSavePackage: Save=26.893871ms
-[2016.03.22-10.55.47:467][574]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_LeftCornerB8B3BDF744E9BCD0E50C03A1A5E6692B.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_LeftCorner.uasset'
-[2016.03.22-10.55.47:468][574]LogSavePackage: Total save time: 28.672051ms
-[2016.03.22-10.55.47:468][574]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_LeftCorner.uasset
-[2016.03.22-10.56.29:434][719]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2016.03.22-10.56.29:435][719]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement_GEN_VARIABLE) Not registered. Aborting.
-[2016.03.22-10.56.29:604][719]LogSavePackage: Save=55.915363ms
-[2016.03.22-10.56.29:604][719]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIleEFA7228A439A146094716EA66A47C463.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset'
-[2016.03.22-10.56.29:607][719]LogSavePackage: Total save time: 61.023343ms
-[2016.03.22-10.56.29:607][719]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset
-[2016.03.22-10.56.29:624][719]LogSavePackage: Save=2.969861ms
-[2016.03.22-10.56.29:624][719]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_RightCorner25B6328054FC61F661A2CEDA7D9CC691F.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_RightCorner2.uasset'
-[2016.03.22-10.56.29:625][719]LogSavePackage: Total save time: 4.699655ms
-[2016.03.22-10.56.29:625][719]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_RightCorner2.uasset
-[2016.03.22-10.56.29:675][719]LogSavePackage: Save=24.331820ms
-[2016.03.22-10.56.29:675][719]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_LeftCorner60B7B76F472199DFFCB9C1B7A77B1DF4.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_LeftCorner.uasset'
-[2016.03.22-10.56.29:678][719]LogSavePackage: Total save time: 34.320701ms
-[2016.03.22-10.56.29:678][719]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_LeftCorner.uasset
-[2016.03.22-10.56.30:676][838]BlueprintLog: New page: Compile BP_FloorTIle_LeftCorner
-[2016.03.22-10.56.30:745][838]BlueprintEditorCompileResults: Info [0446.39] Compile of BP_FloorTIle_LeftCorner successful! [in 69 ms]
-[2016.03.22-10.56.46:251][654]LogActor:Warning: GameNetworkManager /Engine/Transient.World_6:PersistentLevel.GameNetworkManager_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.03.22-10.58.01:774][618]BlueprintLog: New page: Compile RunGameMode
-[2016.03.22-10.58.01:854][618]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2016.03.22-10.58.01:855][618]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement_GEN_VARIABLE) Not registered. Aborting.
-[2016.03.22-10.58.01:899][618]BlueprintEditorCompileResults: Info [0537.54] Compile of RunGameMode successful! [in 124 ms]
-[2016.03.22-10.59.31:063][349]LogSavePackage: Save=38.793030ms
-[2016.03.22-10.59.31:063][349]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/RunGameMode5D3CCEE5469827CE1C3F4A8E9FDD97A2.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset'
-[2016.03.22-10.59.31:087][349]LogSavePackage: Total save time: 71.912065ms
-[2016.03.22-10.59.31:087][349]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset
-[2016.03.22-10.59.31:395][385]BlueprintLog: New page: Compile RunGameMode
-[2016.03.22-10.59.31:476][385]BlueprintEditorCompileResults: Info [0627.12] Compile of RunGameMode successful! [in 80 ms]
-[2016.03.22-11.01.01:594][249]LogSavePackage: Save=42.858059ms
-[2016.03.22-11.01.01:594][249]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/RunGameModeA27240B84C389566CA46EBACE305C59F.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset'
-[2016.03.22-11.01.01:596][249]LogSavePackage: Total save time: 46.918485ms
-[2016.03.22-11.01.01:596][249]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset
-[2016.03.22-11.01.01:977][294]BlueprintLog: New page: Compile RunGameMode
-[2016.03.22-11.01.02:090][294]BlueprintEditorCompileResults: Info [0717.73] Compile of RunGameMode successful! [in 113 ms]
-[2016.03.22-11.01.45:093][838]LogSavePackage: Save=41.356617ms
-[2016.03.22-11.01.45:093][838]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/RunGameModeA1D6CE98468035346B2F11AC5F8C8CAE.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset'
-[2016.03.22-11.01.45:095][838]LogSavePackage: Total save time: 44.951376ms
-[2016.03.22-11.01.45:095][838]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset
-[2016.03.22-11.01.46:375][991]BlueprintLog: New page: Compile RunGameMode
-[2016.03.22-11.01.46:464][991]BlueprintEditorCompileResults: Info [0762.11] Compile of RunGameMode successful! [in 89 ms]
-[2016.03.22-11.02.15:012][ 35]BlueprintLog: New page: Compile RunGameMode
-[2016.03.22-11.02.15:098][ 35]BlueprintEditorCompileResults: Info [0790.74] Compile of RunGameMode successful! [in 85 ms]
-[2016.03.22-11.02.15:597][ 83]LogSavePackage: Save=46.055763ms
-[2016.03.22-11.02.15:597][ 83]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/RunGameMode233E68D140DEAC0DE2311C998555BA46.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset'
-[2016.03.22-11.02.15:599][ 83]LogSavePackage: Total save time: 50.377563ms
-[2016.03.22-11.02.15:599][ 83]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset
-[2016.03.22-11.02.30:857][904]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.03.22-11.02.30:857][904]PIE: New page: PIE session: RunBlankMode (Mar 22, 2016, 1:02:30 PM)
-[2016.03.22-11.02.30:857][904]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
-[2016.03.22-11.02.30:861][904]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003320s)
-[2016.03.22-11.02.30:873][904]LogAIModule: Creating AISystem for world RunBlankMode
-[2016.03.22-11.02.30:874][904]LogPlayLevel: PIE: World Init took: (0.012588s)
-[2016.03.22-11.02.30:874][904]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.016391s)
-[2016.03.22-11.02.30:905][904]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.03.22-11.02.30:916][904]LogInit: FAudioDevice initialized.
-[2016.03.22-11.02.30:951][904]LogWorld: Game class is 'RunGameMode_C'
-[2016.03.22-11.02.30:954][904]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-12.02.30
-[2016.03.22-11.02.30:954][904]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.03.22-11.02.30:954][904]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.03.22-11.02.30:954][904]LogWorld: Bringing up level for play took: 0.001581
-[2016.03.22-11.02.31:018][904]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode 0.812
-[2016.03.22-11.02.44:762][451]Cmd: SELECT NONE
-[2016.03.22-11.02.45:315][512]Cmd: RestartLevel
-[2016.03.22-11.02.45:322][513]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
-[2016.03.22-11.02.45:323][513]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
-[2016.03.22-11.02.45:326][513]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2016.03.22-11.02.45:326][513]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement_GEN_VARIABLE) Not registered. Aborting.
-[2016.03.22-11.02.45:354][513]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000022702F663E0
-[2016.03.22-11.02.45:382][513]Cmd: MEM
-[2016.03.22-11.02.45:406][513]LogMemory: Platform Memory Stats for Windows
-[2016.03.22-11.02.45:406][513]LogMemory: Process Physical Memory: 1149.06 MB used, 1149.06 MB peak
-[2016.03.22-11.02.45:406][513]LogMemory: Process Virtual Memory: 2058.55 MB used, 2058.55 MB peak
-[2016.03.22-11.02.45:406][513]LogMemory: Physical Memory: 6486.76 MB used, 8028.31 MB total
-[2016.03.22-11.02.45:406][513]LogMemory: Virtual Memory: 2824.76 MB used, 134217728.00 MB total
-[2016.03.22-11.02.45:406][513]LogMemory: 
-[2016.03.22-11.02.45:406][513]Allocator Stats for TBB: (not implemented)
-[2016.03.22-11.02.45:407][513]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
-[2016.03.22-11.02.45:409][513]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002660s)
-[2016.03.22-11.02.45:410][513]LogAIModule: Creating AISystem for world RunBlankMode
-[2016.03.22-11.02.45:410][513]LogPlayLevel: PIE: World Init took: (0.001045s)
-[2016.03.22-11.02.45:411][513]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.004158s)
-[2016.03.22-11.02.45:411][513]LogWorld: Game class is 'RunGameMode_C'
-[2016.03.22-11.02.45:415][513]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-12.02.45
-[2016.03.22-11.02.45:415][513]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.03.22-11.02.45:415][513]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.03.22-11.02.45:415][513]LogWorld: Bringing up level for play took: 0.002362
-[2016.03.22-11.02.45:989][577]Cmd: SELECT NONE
-[2016.03.22-11.02.46:676][658]Cmd: SELECT NONE
-[2016.03.22-11.02.51:905][198]Cmd: RestartLevel
-[2016.03.22-11.02.51:914][199]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
-[2016.03.22-11.02.51:915][199]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
-[2016.03.22-11.02.51:950][199]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000022702F645E0
-[2016.03.22-11.02.51:950][199]Cmd: MEM
-[2016.03.22-11.02.51:974][199]LogMemory: Platform Memory Stats for Windows
-[2016.03.22-11.02.51:974][199]LogMemory: Process Physical Memory: 1171.14 MB used, 1175.50 MB peak
-[2016.03.22-11.02.51:974][199]LogMemory: Process Virtual Memory: 2080.03 MB used, 2184.26 MB peak
-[2016.03.22-11.02.51:974][199]LogMemory: Physical Memory: 6485.76 MB used, 8028.31 MB total
-[2016.03.22-11.02.51:974][199]LogMemory: Virtual Memory: 2932.07 MB used, 134217728.00 MB total
-[2016.03.22-11.02.51:974][199]LogMemory: 
-[2016.03.22-11.02.51:974][199]Allocator Stats for TBB: (not implemented)
-[2016.03.22-11.02.51:974][199]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
-[2016.03.22-11.02.51:976][199]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001651s)
-[2016.03.22-11.02.51:977][199]LogAIModule: Creating AISystem for world RunBlankMode
-[2016.03.22-11.02.51:977][199]LogPlayLevel: PIE: World Init took: (0.000735s)
-[2016.03.22-1
+﻿[2016.03.22-12.45.53:365][  0]Log file open, 03/22/16 13:45:53
+[2016.03.22-12.45.53:365][  0]LogInit:Display: Running engine for game: RunGameProto
+[2016.03.22-12.45.53:365][  0]LogPlatformFile: Not using cached read wrapper
+[2016.03.22-12.45.53:365][  0]LogInit:Display: RandInit(-795401899) SRandInit(-795401897).
+[2016.03.22-12.45.53:365][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2016.03.22-12.45.53:365][  0]LogStats: Stats thread started at 0.070070
+[2016.03.22-12.45.53:365][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2016.03.22-12.45.53:365][  0]LogInit: API Version: 2758231
+[2016.03.22-12.45.53:365][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
+[2016.03.22-12.45.53:365][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
+[2016.03.22-12.45.53:365][  0]LogInit: Build Configuration: Development
+[2016.03.22-12.45.53:365][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
+[2016.03.22-12.45.53:365][  0]LogInit: Command line: -EpicPortal 
+[2016.03.22-12.45.53:365][  0]LogInit: Base directory: D:/Programme/Epic Games/4.10/Engine/Binaries/Win64/
+[2016.03.22-12.45.53:365][  0]LogInit: Rocket: 1
+[2016.03.22-12.45.53:426][  0]LogInit: Using libcurl 7.41.0
+[2016.03.22-12.45.53:426][  0]LogInit:  - built for x86_64-pc-win32
+[2016.03.22-12.45.53:426][  0]LogInit:  - supports SSL with WinSSL
+[2016.03.22-12.45.53:426][  0]LogInit:  - other features:
+[2016.03.22-12.45.53:426][  0]LogInit:      CURL_VERSION_SSL
+[2016.03.22-12.45.53:426][  0]LogInit:      CURL_VERSION_IPV6
+[2016.03.22-12.45.53:426][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.03.22-12.45.53:426][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.03.22-12.45.53:426][  0]LogInit:      CURL_VERSION_IDN
+[2016.03.22-12.45.53:426][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.03.22-12.45.53:426][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.03.22-12.45.53:426][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.03.22-12.45.53:426][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.03.22-12.45.53:426][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2016.03.22-12.45.53:434][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.03.22-12.45.53:439][  0]LogInit: Object subsystem initialized
+[2016.03.22-12.45.53:440][  0]LogInit: Selected Device Profile: [Windows]
+[2016.03.22-12.45.53:440][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.03.22-12.45.53:470][  0]LogInit: Computer: MUHAMMED
+[2016.03.22-12.45.53:470][  0]LogInit: User: Mkanzildiy
+[2016.03.22-12.45.53:470][  0]LogInit: CPU Page size=4096, Cores=4
+[2016.03.22-12.45.53:470][  0]LogInit: High frequency timer resolution =3.906243 MHz
+[2016.03.22-12.45.53:470][  0]LogMemory: Memory total: Physical=7.8GB (8GB approx)
+[2016.03.22-12.45.53:470][  0]LogMemory: Platform Memory Stats for Windows
+[2016.03.22-12.45.53:470][  0]LogMemory: Process Physical Memory: 56.30 MB used, 56.30 MB peak
+[2016.03.22-12.45.53:470][  0]LogMemory: Process Virtual Memory: 56.82 MB used, 56.82 MB peak
+[2016.03.22-12.45.53:470][  0]LogMemory: Physical Memory: 6334.07 MB used, 8028.31 MB total
+[2016.03.22-12.45.53:470][  0]LogMemory: Virtual Memory: 383.86 MB used, 134217728.00 MB total
+[2016.03.22-12.45.53:516][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.03.22-12.45.53:933][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 970 (Feature Level 11_0)
+[2016.03.22-12.45.53:933][  0]LogD3D11RHI: Adapter has 4007MB of dedicated video memory, 0MB of dedicated system memory, and 4014MB of shared system memory, 2 output[s]
+[2016.03.22-12.45.53:950][  0]LogD3D11RHI: Found D3D11 adapter 1: Intel(R) HD Graphics 4600 (Feature Level 11_0)
+[2016.03.22-12.45.53:950][  0]LogD3D11RHI: Adapter has 112MB of dedicated video memory, 0MB of dedicated system memory, and 4014MB of shared system memory, 0 output[s]
+[2016.03.22-12.45.53:952][  0]LogD3D11RHI: Found D3D11 adapter 2: Microsoft Basic Render Driver (Feature Level 11_0)
+[2016.03.22-12.45.53:952][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 4014MB of shared system memory, 0 output[s]
+[2016.03.22-12.45.53:952][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2016.03.22-12.45.53:956][  0]LogD3D11RHI: !Direct3DDevice
+[2016.03.22-12.45.53:956][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.03.22-12.45.53:978][  0]LogD3D11RHI: Async texture creation enabled
+[2016.03.22-12.45.53:993][  0]LogShaderCompilers: Guid format shader working directory is -42 characters bigger than the processId version (../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Intermediate/Shaders/WorkingDirectory/6972/).
+[2016.03.22-12.45.53:993][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/MKANZI~1/AppData/Local/Temp/UnrealShaderWorkingDir/944D89624EA56D6E6D9EEFB57B1D046A/'.
+[2016.03.22-12.45.53:993][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.03.22-12.45.54:788][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.03.22-12.45.54:793][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.03.22-12.45.54:796][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.03.22-12.45.54:802][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.03.22-12.45.54:806][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.03.22-12.45.54:809][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.03.22-12.45.54:811][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.03.22-12.45.54:817][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.03.22-12.45.54:822][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.03.22-12.45.54:825][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.03.22-12.45.54:829][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.03.22-12.45.54:838][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.03.22-12.45.54:838][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.03.22-12.45.54:840][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.03.22-12.45.54:859][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.03.22-12.45.54:861][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.03.22-12.45.54:865][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.03.22-12.45.54:868][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.03.22-12.45.54:868][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.03.22-12.45.54:939][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.03.22-12.45.54:993][  0]LogDerivedDataCache: Loaded boot cache 0.05s 41MB C:/Users/Mkanzildiy/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.03.22-12.45.54:993][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Mkanzildiy/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
+[2016.03.22-12.45.54:993][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.03.22-12.45.54:993][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.03.22-12.45.54:993][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.03.22-12.45.54:993][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.03.22-12.45.55:049][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.03.22-12.45.55:061][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Mkanzildiy/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.03.22-12.45.55:235][  0]LogInit: Selected Device Profile: [Windows]
+[2016.03.22-12.45.55:237][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2016.03.22-12.45.55:348][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.03.22-12.45.55:348][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.03.22-12.45.55:541][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.03.22-12.45.56:172][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.03.22-12.45.56:263][  0]LogAssetRegistry: FAssetRegistry took 0.0111 seconds to start up
+[2016.03.22-12.45.56:403][  0]SourceControl: Info Source control is disabled
+[2016.03.22-12.45.56:431][  0]SourceControl: Info Source control is disabled
+[2016.03.22-12.45.56:441][  0]SourceControl: Info Source control is disabled
+[2016.03.22-12.45.56:457][  0]SourceControl: Info Source control is disabled
+[2016.03.22-12.45.56:640][  0]LogObj: 28633 objects as part of root set at end of initial load.
+[2016.03.22-12.45.56:640][  0]LogUObjectAllocator: 6099752 out of 0 bytes used by permanent object pool.
+[2016.03.22-12.45.56:692][  0]LogEngine: Initializing Engine...
+[2016.03.22-12.45.56:693][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.03.22-12.45.56:695][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.03.22-12.45.56:813][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.03.22-12.45.56:822][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.03.22-12.45.56:832][  0]LogInit: FAudioDevice initialized.
+[2016.03.22-12.45.56:858][  0]LogDerivedDataCache: Saved boot cache 0.03s 41MB C:/Users/Mkanzildiy/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.03.22-12.45.56:863][  0]LogInit: Texture streaming: Enabled
+[2016.03.22-12.45.56:867][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2016.03.22-12.45.56:867][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2016.03.22-12.45.56:867][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 2fe8d6d2492a36a1f63964be9bcfb4ac|2282cbabb9f64277a44e3efe37a572bc|c4bdbde8-8efc-4f11-82bd-8377b323bc1a
+[2016.03.22-12.45.56:867][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2016.03.22-12.45.56:880][  0]LogInit: Transaction tracking system initialized
+[2016.03.22-12.45.56:904][  0]BlueprintLog: New page: Editor Load
+[2016.03.22-12.45.56:971][  0]LocalizationService: Info Localization service is disabled
+[2016.03.22-12.45.57:041][  0]LogConsoleResponse:Display: 
+[2016.03.22-12.45.57:150][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.03.22-12.45.57:194][  0]LogFileCache: Scanning file cache for directory 'D:/Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/' took 0.01s
+[2016.03.22-12.45.57:194][  0]SourceControl: Info Source control is disabled
+[2016.03.22-12.45.57:227][  0]LightingResults: New page: Lighting Build
+[2016.03.22-12.45.57:228][  0]MapCheck: New page: Map Check
+[2016.03.22-12.45.57:228][  0]LightingResults: New page: Lighting Build
+[2016.03.22-12.45.57:237][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FFA52BB00
+[2016.03.22-12.45.59:574][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.03.22-12.45.59:682][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.03.22-12.45.59:682][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.03.22-12.45.59:723][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 41.174ms to complete.
+[2016.03.22-12.45.59:723][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 2.530
+[2016.03.22-12.45.59:957][  0]LogCollectionManager: Loaded 0 collections in 0.000840 seconds
+[2016.03.22-12.45.59:998][  0]LogFileCache: Scanning file cache for directory 'D:/Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/Collections/' took 0.01s
+[2016.03.22-12.45.59:998][  0]LogFileCache: Scanning file cache for directory 'D:/Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/Developers/Mkanzildiy/Collections/' took 0.01s
+[2016.03.22-12.45.59:998][  0]LogFileCache: Scanning file cache for directory 'D:/Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/Collections/' took 0.01s
+[2016.03.22-12.45.59:998][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.03.22-12.46.00:004][  0]LogContentBrowser: Native class hierarchy populated in 0.0057 seconds. Added 1893 classes and 338 folders.
+[2016.03.22-12.46.00:007][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2016.03.22-12.46.00:957][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.03.22-12.46.01:009][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.03.22-12.46.01:162][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.03.22-12.46.01:182][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.03.22-12.46.01:204][  0]LogLoad: Full Startup: 8.43 seconds (BP compile: 0.12 seconds)
+[2016.03.22-12.46.01:547][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.03.22-12.46.01:748][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.03.22-12.46.02:452][  0]LogRenderer: Reallocating scene render targets to support 1208x572 (Frame:2).
+[2016.03.22-12.46.03:504][  4]LogAssetRegistry: Asset discovery search completed in 7.2525 seconds
+[2016.03.22-12.46.03:504][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.03.22-12.46.03:504][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000024 seconds (updated 0 objects)
+[2016.03.22-12.46.48:884][967]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.03.22-12.46.48:918][967]Cmd: MAP LOAD FILE="../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Maps/RunBlankMode.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.03.22-12.46.48:937][967]LightingResults: New page: Lighting Build
+[2016.03.22-12.46.48:950][967]LoadErrors: New page: Loading map: RunBlankMode.umap
+[2016.03.22-12.46.48:959][967]MapCheck: New page: Map Check
+[2016.03.22-12.46.48:959][967]LightingResults: New page: Lighting Build
+[2016.03.22-12.46.48:967][967]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FFE689080
+[2016.03.22-12.46.49:000][967]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.46.49:022][967]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.03.22-12.46.49:052][967]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.03.22-12.46.49:091][967]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 39.58ms to complete.
+[2016.03.22-12.46.49:091][967]LogFileHelpers: Loading map 'RunBlankMode' took 0.175
+[2016.03.22-12.46.58:355][ 10]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_Gap_C_41' (it may have been removed)
+[2016.03.22-12.46.58:355][ 10]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh1' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_Gap_C_41' (it may have been removed)
+[2016.03.22-12.46.59:071][ 10]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2016.03.22-12.46.59:474][ 10]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 107 classes and 0 folders.
+[2016.03.22-12.46.59:971][ 10]LoadErrors:Error: Error /Game/ThirdPersonBP/UMG/RunHUD : Failed import for IntProperty /Game/ThirdPersonBP/Blueprints/RunCharacter.RunCharacter_C:TotalCoins
+[2016.03.22-12.47.11:415][ 86]LogRenderer: Reallocating scene render targets to support 1208x712 (Frame:4230).
+[2016.03.22-12.47.16:974][717]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.03.22-12.47.16:975][717]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.03.22-12.47.51:755][796]LogSavePackage: Save=94.182571ms
+[2016.03.22-12.47.51:755][796]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_Gap354484C64AB03808CB8EF5AC18E19B66.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset'
+[2016.03.22-12.47.51:758][796]LogSavePackage: Total save time: 326.349128ms
+[2016.03.22-12.47.51:758][796]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset
+[2016.03.22-12.47.51:892][796]LogSavePackage: Save=99.421364ms
+[2016.03.22-12.47.51:892][796]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle819EC9D847F3E6A3AF38139C0586ABA7.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset'
+[2016.03.22-12.47.51:895][796]LogSavePackage: Total save time: 117.786065ms
+[2016.03.22-12.47.51:895][796]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset
+[2016.03.22-12.48.23:334][480]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.03.22-12.48.23:337][480]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.03.22-12.48.23:337][480]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.03.22-12.48.23:339][480]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_Gap before play...
+[2016.03.22-12.48.23:605][480]LogPlayLevel: PlayLevel: Blueprint regeneration took 271 ms (1 blueprints)
+[2016.03.22-12.48.23:671][480]PIE: New page: PIE session: RunBlankMode (Mar 22, 2016, 2:48:23 PM)
+[2016.03.22-12.48.23:685][480]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.48.23:698][480]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013042s)
+[2016.03.22-12.48.23:698][480]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.48.23:699][480]LogPlayLevel: PIE: World Init took: (0.000910s)
+[2016.03.22-12.48.23:700][480]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.015490s)
+[2016.03.22-12.48.23:748][480]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.03.22-12.48.23:756][480]LogInit: FAudioDevice initialized.
+[2016.03.22-12.48.23:969][480]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.48.24:093][480]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.48.24
+[2016.03.22-12.48.24:093][480]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.48.24:093][480]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.48.24:104][480]LogWorld: Bringing up level for play took: 0.012389
+[2016.03.22-12.48.24:336][480]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode 0.13
+[2016.03.22-12.48.24:763][481]LogCharacterMovement:Warning: GetSimulationTimeStep() - Max iterations 8 hit while remaining time 0.064872 > MaxSimulationTimeStep (0.050) for 'RunCharacter_C_4'
+[2016.03.22-12.48.27:054][710]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023F9EBC6660
+[2016.03.22-12.48.27:685][783]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.03.22-12.48.27:685][783]PIE: New page: PIE session: RunBlankMode (Mar 22, 2016, 2:48:27 PM)
+[2016.03.22-12.48.27:685][783]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.48.27:687][783]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001463s)
+[2016.03.22-12.48.27:687][783]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.48.27:687][783]LogPlayLevel: PIE: World Init took: (0.000718s)
+[2016.03.22-12.48.27:688][783]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002410s)
+[2016.03.22-12.48.27:717][783]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.03.22-12.48.27:724][783]LogInit: FAudioDevice initialized.
+[2016.03.22-12.48.27:754][783]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.48.27:756][783]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.48.27
+[2016.03.22-12.48.27:756][783]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.48.27:756][783]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.48.27:756][783]LogWorld: Bringing up level for play took: 0.001350
+[2016.03.22-12.48.27:776][783]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode -0.431
+[2016.03.22-12.48.36:024][750]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FC7579EE0
+[2016.03.22-12.49.25:520][505]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.03.22-12.49.25:520][505]PIE: New page: PIE session: RunBlankMode (Mar 22, 2016, 2:49:25 PM)
+[2016.03.22-12.49.25:520][505]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.49.25:522][505]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001733s)
+[2016.03.22-12.49.25:522][505]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.49.25:523][505]LogPlayLevel: PIE: World Init took: (0.000873s)
+[2016.03.22-12.49.25:523][505]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002813s)
+[2016.03.22-12.49.25:523][505]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.03.22-12.49.25:523][505]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.03.22-12.49.25:553][505]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.03.22-12.49.25:561][505]LogInit: FAudioDevice initialized.
+[2016.03.22-12.49.25:592][505]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.49.25:594][505]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.49.25
+[2016.03.22-12.49.25:595][505]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.49.25:595][505]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.49.25:595][505]LogWorld: Bringing up level for play took: 0.001422
+[2016.03.22-12.49.25:618][505]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode -0.588
+[2016.03.22-12.49.28:636][603]Cmd: RestartLevel
+[2016.03.22-12.49.28:959][604]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
+[2016.03.22-12.49.28:959][604]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
+[2016.03.22-12.49.29:027][604]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FCB5C56C0
+[2016.03.22-12.49.29:030][604]Cmd: MEM
+[2016.03.22-12.49.29:055][604]LogMemory: Platform Memory Stats for Windows
+[2016.03.22-12.49.29:055][604]LogMemory: Process Physical Memory: 1027.77 MB used, 1032.64 MB peak
+[2016.03.22-12.49.29:055][604]LogMemory: Process Virtual Memory: 1865.87 MB used, 1874.16 MB peak
+[2016.03.22-12.49.29:055][604]LogMemory: Physical Memory: 6614.19 MB used, 8028.31 MB total
+[2016.03.22-12.49.29:055][604]LogMemory: Virtual Memory: 2640.32 MB used, 134217728.00 MB total
+[2016.03.22-12.49.29:059][604]LogMemory: 
+[2016.03.22-12.49.29:059][604]Allocator Stats for TBB: (not implemented)
+[2016.03.22-12.49.29:062][604]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.49.29:064][604]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001603s)
+[2016.03.22-12.49.29:064][604]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.49.29:065][604]LogPlayLevel: PIE: World Init took: (0.000734s)
+[2016.03.22-12.49.29:065][604]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002552s)
+[2016.03.22-12.49.29:065][604]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.49.29:068][604]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 3) at 2016.03.22-13.49.29
+[2016.03.22-12.49.29:068][604]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.49.29:068][604]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.49.29:068][604]LogWorld: Bringing up level for play took: 0.001742
+[2016.03.22-12.49.31:495][792]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FB7E2B060
+[2016.03.22-12.49.36:531][165]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.03.22-12.49.36:531][165]PIE: New page: PIE session: RunBlankMode (Mar 22, 2016, 2:49:36 PM)
+[2016.03.22-12.49.36:531][165]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.49.36:532][165]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001426s)
+[2016.03.22-12.49.36:533][165]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.49.36:533][165]LogPlayLevel: PIE: World Init took: (0.000826s)
+[2016.03.22-12.49.36:533][165]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002447s)
+[2016.03.22-12.49.36:533][165]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.03.22-12.49.36:534][165]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.03.22-12.49.36:564][165]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.03.22-12.49.36:570][165]LogInit: FAudioDevice initialized.
+[2016.03.22-12.49.36:602][165]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.49.36:604][165]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.49.36
+[2016.03.22-12.49.36:604][165]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.49.36:604][165]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.49.36:604][165]LogWorld: Bringing up level for play took: 0.001660
+[2016.03.22-12.49.36:619][165]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode 0.412
+[2016.03.22-12.49.38:245][276]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023F802D5D00
+[2016.03.22-12.49.39:764][398]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.03.22-12.49.39:764][398]PIE: New page: PIE session: RunBlankMode (Mar 22, 2016, 2:49:39 PM)
+[2016.03.22-12.49.39:764][398]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.49.39:765][398]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001257s)
+[2016.03.22-12.49.39:766][398]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.49.39:766][398]LogPlayLevel: PIE: World Init took: (0.000772s)
+[2016.03.22-12.49.39:766][398]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002350s)
+[2016.03.22-12.49.39:799][398]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.03.22-12.49.39:807][398]LogInit: FAudioDevice initialized.
+[2016.03.22-12.49.39:836][398]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.49.39:838][398]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.49.39
+[2016.03.22-12.49.39:838][398]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.49.39:838][398]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.49.39:839][398]LogWorld: Bringing up level for play took: 0.001590
+[2016.03.22-12.49.39:858][398]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode -0.349
+[2016.03.22-12.49.50:563][186]Cmd: RestartLevel
+[2016.03.22-12.49.50:574][187]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
+[2016.03.22-12.49.50:575][187]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
+[2016.03.22-12.49.50:605][187]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FBFD94E00
+[2016.03.22-12.49.50:605][187]Cmd: MEM
+[2016.03.22-12.49.50:630][187]LogMemory: Platform Memory Stats for Windows
+[2016.03.22-12.49.50:630][187]LogMemory: Process Physical Memory: 1119.46 MB used, 1119.46 MB peak
+[2016.03.22-12.49.50:630][187]LogMemory: Process Virtual Memory: 1970.50 MB used, 2056.99 MB peak
+[2016.03.22-12.49.50:630][187]LogMemory: Physical Memory: 6710.54 MB used, 8028.31 MB total
+[2016.03.22-12.49.50:630][187]LogMemory: Virtual Memory: 2820.14 MB used, 134217728.00 MB total
+[2016.03.22-12.49.50:630][187]LogMemory: 
+[2016.03.22-12.49.50:630][187]Allocator Stats for TBB: (not implemented)
+[2016.03.22-12.49.50:630][187]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.49.50:632][187]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001692s)
+[2016.03.22-12.49.50:632][187]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.49.50:632][187]LogPlayLevel: PIE: World Init took: (0.000643s)
+[2016.03.22-12.49.50:632][187]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002544s)
+[2016.03.22-12.49.50:633][187]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.49.50:634][187]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.49.50
+[2016.03.22-12.49.50:634][187]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.49.50:635][187]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.49.50:635][187]LogWorld: Bringing up level for play took: 0.001243
+[2016.03.22-12.49.55:303][528]Cmd: RestartLevel
+[2016.03.22-12.49.55:317][529]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
+[2016.03.22-12.49.55:318][529]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
+[2016.03.22-12.49.55:347][529]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FAF1547C0
+[2016.03.22-12.49.55:347][529]Cmd: MEM
+[2016.03.22-12.49.55:370][529]LogMemory: Platform Memory Stats for Windows
+[2016.03.22-12.49.55:370][529]LogMemory: Process Physical Memory: 1125.46 MB used, 1125.47 MB peak
+[2016.03.22-12.49.55:370][529]LogMemory: Process Virtual Memory: 1936.96 MB used, 2085.46 MB peak
+[2016.03.22-12.49.55:370][529]LogMemory: Physical Memory: 6723.78 MB used, 8028.31 MB total
+[2016.03.22-12.49.55:370][529]LogMemory: Virtual Memory: 2829.58 MB used, 134217728.00 MB total
+[2016.03.22-12.49.55:370][529]LogMemory: 
+[2016.03.22-12.49.55:370][529]Allocator Stats for TBB: (not implemented)
+[2016.03.22-12.49.55:370][529]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.49.55:371][529]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001568s)
+[2016.03.22-12.49.55:372][529]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.49.55:372][529]LogPlayLevel: PIE: World Init took: (0.000929s)
+[2016.03.22-12.49.55:372][529]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002767s)
+[2016.03.22-12.49.55:373][529]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.49.55:374][529]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.49.55
+[2016.03.22-12.49.55:375][529]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.49.55:375][529]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.49.55:375][529]LogWorld: Bringing up level for play took: 0.001214
+[2016.03.22-12.50.04:454][202]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FBFD94E00
+[2016.03.22-12.52.26:479][909]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_IfThenElse_29.EdGraphPin_7117''
+[2016.03.22-12.52.26:479][909]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2605.EdGraphPin_9304''
+[2016.03.22-12.52.26:479][909]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2610.EdGraphPin_9339''
+[2016.03.22-12.52.26:511][909]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2607.EdGraphPin_9312''
+[2016.03.22-12.52.26:512][909]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2609.EdGraphPin_9323''
+[2016.03.22-12.52.26:513][909]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_IfThenElse_29.EdGraphPin_7118''
+[2016.03.22-12.52.26:513][909]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2610.EdGraphPin_9337''
+[2016.03.22-12.52.45:725][875]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FB11D6660
+[2016.03.22-12.52.45:836][875]LogSavePackage: Save=35.485249ms
+[2016.03.22-12.52.45:836][875]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_GapC735F5B24A245CE0F499E3BBFA0C94FA.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset'
+[2016.03.22-12.52.45:838][875]LogSavePackage: Total save time: 41.697353ms
+[2016.03.22-12.52.45:838][875]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset
+[2016.03.22-12.52.45:964][875]LogSavePackage: Save=99.436981ms
+[2016.03.22-12.52.45:964][875]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIleAEB68128435DE1E90500C3A441232AD1.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset'
+[2016.03.22-12.52.45:967][875]LogSavePackage: Total save time: 105.021119ms
+[2016.03.22-12.52.45:967][875]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset
+[2016.03.22-12.52.55:775][934]LogSavePackage: Save=91.659683ms
+[2016.03.22-12.52.55:775][934]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle44C8DBCB49B8F85D25AA36A4C5003C54.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset'
+[2016.03.22-12.52.55:776][934]LogSavePackage: Total save time: 112.938955ms
+[2016.03.22-12.52.55:776][934]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset
+[2016.03.22-12.52.57:505][121]BlueprintLog: New page: Compile BP_FloorTIle
+[2016.03.22-12.52.57:598][121]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'TurnZone' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_LeftCorner_C_110' (it may have been removed)
+[2016.03.22-12.52.57:627][121]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Ramp' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RampDown_C_114' (it may have been removed)
+[2016.03.22-12.52.57:654][121]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Ramp' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RampUp_C_118' (it may have been removed)
+[2016.03.22-12.52.57:684][121]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'TurnZone' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RightCorner_C_122' (it may have been removed)
+[2016.03.22-12.52.57:985][121]BlueprintEditorCompileResults: Info [0425.19] Compile of BP_FloorTIle successful! [in 463 ms]
+[2016.03.22-12.53.04:036][778]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.03.22-12.53.04:036][778]PIE: New page: PIE session: RunBlankMode (Mar 22, 2016, 2:53:04 PM)
+[2016.03.22-12.53.04:036][778]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.53.04:039][778]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002224s)
+[2016.03.22-12.53.04:039][778]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.53.04:040][778]LogPlayLevel: PIE: World Init took: (0.000953s)
+[2016.03.22-12.53.04:040][778]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.003410s)
+[2016.03.22-12.53.04:074][778]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.03.22-12.53.04:084][778]LogInit: FAudioDevice initialized.
+[2016.03.22-12.53.04:117][778]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.53.04:119][778]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.53.04
+[2016.03.22-12.53.04:119][778]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.53.04:119][778]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.53.04:119][778]LogWorld: Bringing up level for play took: 0.001435
+[2016.03.22-12.53.04:138][778]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode -0.069
+[2016.03.22-12.53.05:926][940]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023F9EBC7EC0
+[2016.03.22-12.53.19:092][138]LogSavePackage: Save=83.314072ms
+[2016.03.22-12.53.19:092][138]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIleFAACD6984912C5B294EFE4AC027B9FAA.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset'
+[2016.03.22-12.53.19:093][138]LogSavePackage: Total save time: 87.576475ms
+[2016.03.22-12.53.19:093][138]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset
+[2016.03.22-12.53.19:768][199]BlueprintLog: New page: Compile BP_FloorTIle
+[2016.03.22-12.53.19:838][199]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'TurnZone' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_LeftCorner_C_148' (it may have been removed)
+[2016.03.22-12.53.19:869][199]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Ramp' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RampDown_C_152' (it may have been removed)
+[2016.03.22-12.53.19:898][199]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Ramp' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RampUp_C_156' (it may have been removed)
+[2016.03.22-12.53.19:926][199]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'TurnZone' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RightCorner_C_160' (it may have been removed)
+[2016.03.22-12.53.20:212][199]BlueprintEditorCompileResults: Info [0447.44] Compile of BP_FloorTIle successful! [in 443 ms]
+[2016.03.22-12.53.21:383][303]LogSavePackage: Save=89.734558ms
+[2016.03.22-12.53.21:383][303]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle8F16C76C4F500260A718958DD945C175.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset'
+[2016.03.22-12.53.21:384][303]LogSavePackage: Total save time: 93.101222ms
+[2016.03.22-12.53.21:384][303]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset
+[2016.03.22-12.53.38:284][ 50]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/ThirdPersonBP/Blueprints/BP_FloorTIle.BP_FloorTIle:EventGraph.K2Node_CallFunction_2605 or K2Node_CallFunction /Game/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.BP_FloorTIle_Gap:EventGraph.K2Node_CallFunction_2605
+[2016.03.22-12.53.38:284][ 50]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle.BP_FloorTIle:EventGraph.K2Node_CallFunction_2605.EdGraphPin_28039) from referencer (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.BP_FloorTIle_Gap:EventGraph.K2Node_DynamicCast_550.EdGraphPin_28025).  Import failed...
+[2016.03.22-12.53.38:284][ 50]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2605.EdGraphPin_28039''
+[2016.03.22-12.53.38:284][ 50]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/ThirdPersonBP/Blueprints/BP_FloorTIle.BP_FloorTIle:EventGraph.K2Node_CallFunction_2610 or K2Node_CallFunction /Game/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.BP_FloorTIle_Gap:EventGraph.K2Node_CallFunction_2610
+[2016.03.22-12.53.38:284][ 50]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle.BP_FloorTIle:EventGraph.K2Node_CallFunction_2610.EdGraphPin_28086) from referencer (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.BP_FloorTIle_Gap:EventGraph.K2Node_DynamicCast_550.EdGraphPin_28025).  Import failed...
+[2016.03.22-12.53.38:284][ 50]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2610.EdGraphPin_28086''
+[2016.03.22-12.53.38:284][ 50]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle.BP_FloorTIle:EventGraph.K2Node_ComponentBoundEvent_33.EdGraphPin_27766) from referencer (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.BP_FloorTIle_Gap:EventGraph.K2Node_DynamicCast_550.EdGraphPin_28024).  Import failed...
+[2016.03.22-12.53.38:284][ 50]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_ComponentBoundEvent_33.EdGraphPin_27766''
+[2016.03.22-12.53.38:284][ 50]LogUObjectHash:Warning: Ambiguous search, could be K2Node_IfThenElse /Game/ThirdPersonBP/Blueprints/BP_FloorTIle.BP_FloorTIle:EventGraph.K2Node_IfThenElse_29 or K2Node_IfThenElse /Game/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.BP_FloorTIle_Gap:EventGraph.K2Node_IfThenElse_29
+[2016.03.22-12.53.38:284][ 50]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle.BP_FloorTIle:EventGraph.K2Node_IfThenElse_29.EdGraphPin_28072) from referencer (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.BP_FloorTIle_Gap:EventGraph.K2Node_DynamicCast_550.EdGraphPin_28022).  Import failed...
+[2016.03.22-12.53.38:284][ 50]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_IfThenElse_29.EdGraphPin_28072''
+[2016.03.22-12.53.38:284][ 50]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle.BP_FloorTIle:EventGraph.K2Node_ComponentBoundEvent_33.EdGraphPin_27765) from referencer (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.BP_FloorTIle_Gap:EventGraph.K2Node_DynamicCast_550.EdGraphPin_28021).  Import failed...
+[2016.03.22-12.53.38:284][ 50]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_ComponentBoundEvent_33.EdGraphPin_27765''
+[2016.03.22-12.53.38:285][ 50]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/ThirdPersonBP/Blueprints/BP_FloorTIle.BP_FloorTIle:EventGraph.K2Node_CallFunction_2607 or K2Node_CallFunction /Game/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.BP_FloorTIle_Gap:EventGraph.K2Node_CallFunction_2607
+[2016.03.22-12.53.38:285][ 50]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle.BP_FloorTIle:EventGraph.K2Node_CallFunction_2607.EdGraphPin_28047) from referencer (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.BP_FloorTIle_Gap:EventGraph.K2Node_CallFunction_2605.EdGraphPin_28040).  Import failed...
+[2016.03.22-12.53.38:285][ 50]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2607.EdGraphPin_28047''
+[2016.03.22-12.53.38:285][ 50]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/ThirdPersonBP/Blueprints/BP_FloorTIle.BP_FloorTIle:EventGraph.K2Node_CallFunction_2609 or K2Node_CallFunction /Game/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.BP_FloorTIle_Gap:EventGraph.K2Node_CallFunction_2609
+[2016.03.22-12.53.38:285][ 50]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle.BP_FloorTIle:EventGraph.K2Node_CallFunction_2609.EdGraphPin_28058) from referencer (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.BP_FloorTIle_Gap:EventGraph.K2Node_CallFunction_2607.EdGraphPin_28048).  Import failed...
+[2016.03.22-12.53.38:285][ 50]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2609.EdGraphPin_28058''
+[2016.03.22-12.53.38:285][ 50]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle.BP_FloorTIle:EventGraph.K2Node_ComponentBoundEvent_33.EdGraphPin_28114) from referencer (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.BP_FloorTIle_Gap:EventGraph.K2Node_CallFunction_2607.EdGraphPin_28046).  Import failed...
+[2016.03.22-12.53.38:285][ 50]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_ComponentBoundEvent_33.EdGraphPin_28114''
+[2016.03.22-12.53.38:285][ 50]LogUObjectHash:Warning: Ambiguous search, could be K2Node_IfThenElse /Game/ThirdPersonBP/Blueprints/BP_FloorTIle.BP_FloorTIle:EventGraph.K2Node_IfThenElse_29 or K2Node_IfThenElse /Game/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.BP_FloorTIle_Gap:EventGraph.K2Node_IfThenElse_29
+[2016.03.22-12.53.38:285][ 50]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle.BP_FloorTIle:EventGraph.K2Node_IfThenElse_29.EdGraphPin_28073) from referencer (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.BP_FloorTIle_Gap:EventGraph.K2Node_CallFunction_2609.EdGraphPin_28061).  Import failed...
+[2016.03.22-12.53.38:285][ 50]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_IfThenElse_29.EdGraphPin_28073''
+[2016.03.22-12.53.38:285][ 50]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/ThirdPersonBP/Blueprints/BP_FloorTIle.BP_FloorTIle:EventGraph.K2Node_CallFunction_2610 or K2Node_CallFunction /Game/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.BP_FloorTIle_Gap:EventGraph.K2Node_CallFunction_2610
+[2016.03.22-12.53.38:285][ 50]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle.BP_FloorTIle:EventGraph.K2Node_CallFunction_2610.EdGraphPin_28084) from referencer (EdGraphPin /Game/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.BP_FloorTIle_Gap:EventGraph.K2Node_IfThenElse_29.EdGraphPin_28074).  Import failed...
+[2016.03.22-12.53.38:285][ 50]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2610.EdGraphPin_28084''
+[2016.03.22-12.53.45:157][693]LogSavePackage: Save=33.739323ms
+[2016.03.22-12.53.45:157][693]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_Gap0C69CA8946AF8001021D4C9E242B664D.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset'
+[2016.03.22-12.53.45:159][693]LogSavePackage: Total save time: 53.850207ms
+[2016.03.22-12.53.45:159][693]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset
+[2016.03.22-12.53.46:621][833]BlueprintLog: New page: Compile BP_FloorTIle_Gap
+[2016.03.22-12.53.46:695][833]BlueprintEditorCompileResults: Info [0473.92] Compile of BP_FloorTIle_Gap successful! [in 73 ms]
+[2016.03.22-12.53.47:248][880]LogSavePackage: Save=35.357502ms
+[2016.03.22-12.53.47:248][880]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_Gap49E911B647AF728342C5EFB073BA6801.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset'
+[2016.03.22-12.53.47:249][880]LogSavePackage: Total save time: 39.737925ms
+[2016.03.22-12.53.47:249][880]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset
+[2016.03.22-12.53.48:514][  5]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.03.22-12.53.48:514][  5]PIE: New page: PIE session: RunBlankMode (Mar 22, 2016, 2:53:48 PM)
+[2016.03.22-12.53.48:514][  5]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.53.48:516][  5]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002196s)
+[2016.03.22-12.53.48:517][  5]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.53.48:517][  5]LogPlayLevel: PIE: World Init took: (0.000888s)
+[2016.03.22-12.53.48:518][  5]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.003418s)
+[2016.03.22-12.53.48:545][  5]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.03.22-12.53.48:554][  5]LogInit: FAudioDevice initialized.
+[2016.03.22-12.53.48:587][  5]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.53.48:589][  5]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.53.48
+[2016.03.22-12.53.48:590][  5]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.53.48:590][  5]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.53.48:590][  5]LogWorld: Bringing up level for play took: 0.001743
+[2016.03.22-12.53.48:608][  5]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode 0.401
+[2016.03.22-12.54.07:904][742]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FCB686700
+[2016.03.22-12.54.18:134][647]LogEditorTransaction: Undo Modify Component(s)
+[2016.03.22-12.54.18:203][647]LogActorComponent: UnregisterComponent: (/Engine/Transient.DefaultSceneRoot_GEN_VARIABLE) Not registered. Aborting.
+[2016.03.22-12.54.18:203][647]LogActorComponent: UnregisterComponent: (/Engine/Transient.Wall_GEN_VARIABLE) Not registered. Aborting.
+[2016.03.22-12.54.18:203][647]LogActorComponent: UnregisterComponent: (/Engine/Transient.Wall2_GEN_VARIABLE) Not registered. Aborting.
+[2016.03.22-12.54.18:203][647]LogActorComponent: UnregisterComponent: (/Engine/Transient.AttachPoint_GEN_VARIABLE) Not registered. Aborting.
+[2016.03.22-12.54.18:203][647]LogActorComponent: UnregisterComponent: (/Engine/Transient.Floor_GEN_VARIABLE) Not registered. Aborting.
+[2016.03.22-12.54.18:203][647]LogActorComponent: UnregisterComponent: (/Engine/Transient.EndTrigger_GEN_VARIABLE) Not registered. Aborting.
+[2016.03.22-12.54.18:203][647]LogActorComponent: UnregisterComponent: (/Engine/Transient.SpawnPoint_GEN_VARIABLE) Not registered. Aborting.
+[2016.03.22-12.54.18:203][647]LogActorComponent: UnregisterComponent: (/Engine/Transient.SpawnPointL_GEN_VARIABLE) Not registered. Aborting.
+[2016.03.22-12.54.18:203][647]LogActorComponent: UnregisterComponent: (/Engine/Transient.SpawnPointR_GEN_VARIABLE) Not registered. Aborting.
+[2016.03.22-12.54.18:203][647]LogActorComponent: UnregisterComponent: (/Engine/Transient.CoinArea_GEN_VARIABLE) Not registered. Aborting.
+[2016.03.22-12.54.28:327][761]LogSavePackage: Save=32.276283ms
+[2016.03.22-12.54.28:327][761]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_GapAC7F26ED4DC4C75D9F8A7BA58B359345.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset'
+[2016.03.22-12.54.28:329][761]LogSavePackage: Total save time: 36.504898ms
+[2016.03.22-12.54.28:329][761]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset
+[2016.03.22-12.54.28:429][761]LogSavePackage: Save=80.425873ms
+[2016.03.22-12.54.28:429][761]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle0CF6579F45D2A168EEA0C6BE0653D400.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset'
+[2016.03.22-12.54.28:431][761]LogSavePackage: Total save time: 84.469143ms
+[2016.03.22-12.54.28:431][761]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset
+[2016.03.22-12.54.34:910][477]BlueprintLog: New page: Compile BP_FloorTIle_Gap
+[2016.03.22-12.54.34:984][477]BlueprintEditorCompileResults: Info [0522.21] Compile of BP_FloorTIle_Gap successful! [in 73 ms]
+[2016.03.22-12.54.36:557][644]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.03.22-12.54.36:564][644]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle before play...
+[2016.03.22-12.54.36:632][644]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'TurnZone' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_LeftCorner_C_196' (it may have been removed)
+[2016.03.22-12.54.36:661][644]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Ramp' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RampDown_C_200' (it may have been removed)
+[2016.03.22-12.54.36:688][644]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Ramp' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RampUp_C_204' (it may have been removed)
+[2016.03.22-12.54.36:718][644]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'TurnZone' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RightCorner_C_208' (it may have been removed)
+[2016.03.22-12.54.36:957][644]LogPlayLevel: PlayLevel: Blueprint regeneration took 400 ms (7 blueprints)
+[2016.03.22-12.54.36:958][644]LogPlayLevel: [PlayLevel] Compiling RunGameMode before play...
+[2016.03.22-12.54.37:013][644]LogPlayLevel: PlayLevel: Blueprint regeneration took 456 ms (7 blueprints)
+[2016.03.22-12.54.37:018][644]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_Gap before play...
+[2016.03.22-12.54.37:068][644]LogPlayLevel: PlayLevel: Blueprint regeneration took 511 ms (7 blueprints)
+[2016.03.22-12.54.37:068][644]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_LeftCorner before play...
+[2016.03.22-12.54.37:107][644]LogPlayLevel: PlayLevel: Blueprint regeneration took 550 ms (7 blueprints)
+[2016.03.22-12.54.37:108][644]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_RampDown before play...
+[2016.03.22-12.54.37:143][644]LogPlayLevel: PlayLevel: Blueprint regeneration took 586 ms (7 blueprints)
+[2016.03.22-12.54.37:144][644]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_RampUp before play...
+[2016.03.22-12.54.37:180][644]LogPlayLevel: PlayLevel: Blueprint regeneration took 623 ms (7 blueprints)
+[2016.03.22-12.54.37:180][644]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_RightCorner before play...
+[2016.03.22-12.54.37:226][644]LogPlayLevel: PlayLevel: Blueprint regeneration took 669 ms (7 blueprints)
+[2016.03.22-12.54.37:255][644]PIE: New page: PIE session: RunBlankMode (Mar 22, 2016, 2:54:37 PM)
+[2016.03.22-12.54.37:255][644]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.54.37:257][644]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001230s)
+[2016.03.22-12.54.37:257][644]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.54.37:258][644]LogPlayLevel: PIE: World Init took: (0.001145s)
+[2016.03.22-12.54.37:258][644]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002610s)
+[2016.03.22-12.54.37:288][644]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.03.22-12.54.37:295][644]LogInit: FAudioDevice initialized.
+[2016.03.22-12.54.37:329][644]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.54.37:331][644]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.54.37
+[2016.03.22-12.54.37:331][644]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.54.37:331][644]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.54.37:331][644]LogWorld: Bringing up level for play took: 0.001222
+[2016.03.22-12.54.37:347][644]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode 1.14
+[2016.03.22-12.54.37:378][645]LogCharacterMovement:Warning: GetSimulationTimeStep() - Max iterations 8 hit while remaining time 0.064872 > MaxSimulationTimeStep (0.050) for 'RunCharacter_C_14'
+[2016.03.22-12.54.43:193][288]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023F852C44A0
+[2016.03.22-12.54.45:446][543]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.03.22-12.54.45:446][543]PIE: New page: PIE session: RunBlankMode (Mar 22, 2016, 2:54:45 PM)
+[2016.03.22-12.54.45:446][543]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.54.45:448][543]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002035s)
+[2016.03.22-12.54.45:449][543]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.54.45:449][543]LogPlayLevel: PIE: World Init took: (0.000646s)
+[2016.03.22-12.54.45:449][543]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002951s)
+[2016.03.22-12.54.45:479][543]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.03.22-12.54.45:487][543]LogInit: FAudioDevice initialized.
+[2016.03.22-12.54.45:521][543]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.54.45:523][543]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.54.45
+[2016.03.22-12.54.45:524][543]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.54.45:524][543]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.54.45:524][543]LogWorld: Bringing up level for play took: 0.001829
+[2016.03.22-12.54.45:543][543]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode -0.664
+[2016.03.22-12.55.12:707][389]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FF20022A0
+[2016.03.22-12.56.23:512][483]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.03.22-12.56.23:513][483]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.03.22-12.56.23:616][483]LogSavePackage: Save=38.309444ms
+[2016.03.22-12.56.23:616][483]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_Gap0D3C76864C9F22DA6C3BE19C5DFCEF8E.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset'
+[2016.03.22-12.56.23:618][483]LogSavePackage: Total save time: 43.500878ms
+[2016.03.22-12.56.23:618][483]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset
+[2016.03.22-12.56.25:561][708]BlueprintLog: New page: Compile BP_FloorTIle_Gap
+[2016.03.22-12.56.25:631][708]BlueprintEditorCompileResults: Info [0632.86] Compile of BP_FloorTIle_Gap successful! [in 69 ms]
+[2016.03.22-12.56.27:595][931]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.03.22-12.56.27:595][931]PIE: New page: PIE session: RunBlankMode (Mar 22, 2016, 2:56:27 PM)
+[2016.03.22-12.56.27:595][931]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.56.27:597][931]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001806s)
+[2016.03.22-12.56.27:598][931]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.56.27:598][931]LogPlayLevel: PIE: World Init took: (0.000915s)
+[2016.03.22-12.56.27:598][931]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002918s)
+[2016.03.22-12.56.27:629][931]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.03.22-12.56.27:636][931]LogInit: FAudioDevice initialized.
+[2016.03.22-12.56.27:671][931]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.56.27:673][931]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.56.27
+[2016.03.22-12.56.27:673][931]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.56.27:673][931]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.56.27:673][931]LogWorld: Bringing up level for play took: 0.001389
+[2016.03.22-12.56.27:688][931]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode -0.519
+[2016.03.22-12.56.32:862][498]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FC48F9800
+[2016.03.22-12.56.48:694][ 76]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.03.22-12.56.48:694][ 76]PIE: New page: PIE session: RunBlankMode (Mar 22, 2016, 2:56:48 PM)
+[2016.03.22-12.56.48:694][ 76]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.56.48:696][ 76]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001132s)
+[2016.03.22-12.56.48:696][ 76]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.56.48:697][ 76]LogPlayLevel: PIE: World Init took: (0.000934s)
+[2016.03.22-12.56.48:697][ 76]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002277s)
+[2016.03.22-12.56.48:697][ 76]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.03.22-12.56.48:697][ 76]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.03.22-12.56.48:726][ 76]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.03.22-12.56.48:735][ 76]LogInit: FAudioDevice initialized.
+[2016.03.22-12.56.48:767][ 76]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.56.48:769][ 76]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.56.48
+[2016.03.22-12.56.48:769][ 76]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.56.48:769][ 76]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.56.48:769][ 76]LogWorld: Bringing up level for play took: 0.001391
+[2016.03.22-12.56.48:792][ 76]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode 0.585
+[2016.03.22-12.56.50:677][280]Cmd: RestartLevel
+[2016.03.22-12.56.50:686][281]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
+[2016.03.22-12.56.50:687][281]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
+[2016.03.22-12.56.50:716][281]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FAF887560
+[2016.03.22-12.56.50:720][281]Cmd: MEM
+[2016.03.22-12.56.50:743][281]LogMemory: Platform Memory Stats for Windows
+[2016.03.22-12.56.50:743][281]LogMemory: Process Physical Memory: 1222.20 MB used, 1400.82 MB peak
+[2016.03.22-12.56.50:743][281]LogMemory: Process Virtual Memory: 2282.16 MB used, 2360.59 MB peak
+[2016.03.22-12.56.50:743][281]LogMemory: Physical Memory: 6916.86 MB used, 8028.31 MB total
+[2016.03.22-12.56.50:743][281]LogMemory: Virtual Memory: 3091.14 MB used, 134217728.00 MB total
+[2016.03.22-12.56.50:743][281]LogMemory: 
+[2016.03.22-12.56.50:743][281]Allocator Stats for TBB: (not implemented)
+[2016.03.22-12.56.50:743][281]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.56.50:744][281]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001059s)
+[2016.03.22-12.56.50:745][281]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.56.50:745][281]LogPlayLevel: PIE: World Init took: (0.000641s)
+[2016.03.22-12.56.50:745][281]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002035s)
+[2016.03.22-12.56.50:745][281]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.56.50:748][281]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.56.50
+[2016.03.22-12.56.50:748][281]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.56.50:749][281]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.56.50:749][281]LogWorld: Bringing up level for play took: 0.002053
+[2016.03.22-12.56.53:670][601]Cmd: RestartLevel
+[2016.03.22-12.56.53:679][602]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
+[2016.03.22-12.56.53:682][602]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
+[2016.03.22-12.56.53:707][602]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002401764D1C0
+[2016.03.22-12.56.53:707][602]Cmd: MEM
+[2016.03.22-12.56.53:731][602]LogMemory: Platform Memory Stats for Windows
+[2016.03.22-12.56.53:731][602]LogMemory: Process Physical Memory: 1220.16 MB used, 1400.82 MB peak
+[2016.03.22-12.56.53:731][602]LogMemory: Process Virtual Memory: 2268.18 MB used, 2394.70 MB peak
+[2016.03.22-12.56.53:731][602]LogMemory: Physical Memory: 6916.31 MB used, 8028.31 MB total
+[2016.03.22-12.56.53:731][602]LogMemory: Virtual Memory: 3140.64 MB used, 134217728.00 MB total
+[2016.03.22-12.56.53:731][602]LogMemory: 
+[2016.03.22-12.56.53:731][602]Allocator Stats for TBB: (not implemented)
+[2016.03.22-12.56.53:731][602]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.56.53:732][602]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001085s)
+[2016.03.22-12.56.53:732][602]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.56.53:733][602]LogPlayLevel: PIE: World Init took: (0.000585s)
+[2016.03.22-12.56.53:733][602]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.001869s)
+[2016.03.22-12.56.53:733][602]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.56.53:735][602]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.56.53
+[2016.03.22-12.56.53:735][602]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.56.53:735][602]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.56.53:735][602]LogWorld: Bringing up level for play took: 0.001564
+[2016.03.22-12.56.59:508][228]Cmd: RestartLevel
+[2016.03.22-12.56.59:519][229]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
+[2016.03.22-12.56.59:521][229]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
+[2016.03.22-12.56.59:550][229]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FC48EBBA0
+[2016.03.22-12.56.59:550][229]Cmd: MEM
+[2016.03.22-12.56.59:569][229]LogMemory: Platform Memory Stats for Windows
+[2016.03.22-12.56.59:569][229]LogMemory: Process Physical Memory: 1218.93 MB used, 1400.82 MB peak
+[2016.03.22-12.56.59:569][229]LogMemory: Process Virtual Memory: 2212.61 MB used, 2394.70 MB peak
+[2016.03.22-12.56.59:569][229]LogMemory: Physical Memory: 6918.22 MB used, 8028.31 MB total
+[2016.03.22-12.56.59:569][229]LogMemory: Virtual Memory: 3116.64 MB used, 134217728.00 MB total
+[2016.03.22-12.56.59:569][229]LogMemory: 
+[2016.03.22-12.56.59:570][229]Allocator Stats for TBB: (not implemented)
+[2016.03.22-12.56.59:570][229]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.56.59:571][229]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001596s)
+[2016.03.22-12.56.59:572][229]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.56.59:572][229]LogPlayLevel: PIE: World Init took: (0.000631s)
+[2016.03.22-12.56.59:572][229]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002441s)
+[2016.03.22-12.56.59:572][229]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.56.59:574][229]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.56.59
+[2016.03.22-12.56.59:574][229]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_16 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.56.59:575][229]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_16 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.56.59:575][229]LogWorld: Bringing up level for play took: 0.001674
+[2016.03.22-12.57.18:867][194]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FFE8451C0
+[2016.03.22-12.59.28:359][993]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.03.22-12.59.28:359][993]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.03.22-12.59.28:515][993]LogSavePackage: Save=42.303822ms
+[2016.03.22-12.59.28:515][993]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/RunHUD53B60DEE4882A1B3027A3B9C8C26BFAF.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/UMG/RunHUD.uasset'
+[2016.03.22-12.59.28:541][993]LogSavePackage: Total save time: 90.230178ms
+[2016.03.22-12.59.28:541][993]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/UMG/RunHUD.uasset
+[2016.03.22-12.59.36:183][749]LogSavePackage: Save=17.028383ms
+[2016.03.22-12.59.36:183][749]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/RunHUD632580764E52EF048EF9668FF3BCCCE0.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/UMG/RunHUD.uasset'
+[2016.03.22-12.59.36:186][749]LogSavePackage: Total save time: 21.274664ms
+[2016.03.22-12.59.36:186][749]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/UMG/RunHUD.uasset
+[2016.03.22-12.59.38:036][918]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.03.22-12.59.38:039][918]LogPlayLevel: [PlayLevel] Compiling RunHUD before play...
+[2016.03.22-12.59.38:084][918]LogPlayLevel: PlayLevel: Blueprint regeneration took 48 ms (2 blueprints)
+[2016.03.22-12.59.38:085][918]LogPlayLevel: [PlayLevel] Compiling RunGameMode before play...
+[2016.03.22-12.59.38:138][918]LogPlayLevel: PlayLevel: Blueprint regeneration took 102 ms (3 blueprints)
+[2016.03.22-12.59.38:149][918]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle before play...
+[2016.03.22-12.59.38:224][918]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'TurnZone' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_LeftCorner_C_255' (it may have been removed)
+[2016.03.22-12.59.38:254][918]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Ramp' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RampDown_C_259' (it may have been removed)
+[2016.03.22-12.59.38:284][918]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Ramp' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RampUp_C_263' (it may have been removed)
+[2016.03.22-12.59.38:309][918]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'TurnZone' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RightCorner_C_267' (it may have been removed)
+[2016.03.22-12.59.38:545][918]LogPlayLevel: PlayLevel: Blueprint regeneration took 509 ms (8 blueprints)
+[2016.03.22-12.59.38:554][918]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_Gap before play...
+[2016.03.22-12.59.38:600][918]LogPlayLevel: PlayLevel: Blueprint regeneration took 564 ms (8 blueprints)
+[2016.03.22-12.59.38:600][918]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_LeftCorner before play...
+[2016.03.22-12.59.38:637][918]LogPlayLevel: PlayLevel: Blueprint regeneration took 601 ms (8 blueprints)
+[2016.03.22-12.59.38:637][918]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_RampDown before play...
+[2016.03.22-12.59.38:671][918]LogPlayLevel: PlayLevel: Blueprint regeneration took 635 ms (8 blueprints)
+[2016.03.22-12.59.38:671][918]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_RampUp before play...
+[2016.03.22-12.59.38:705][918]LogPlayLevel: PlayLevel: Blueprint regeneration took 669 ms (8 blueprints)
+[2016.03.22-12.59.38:705][918]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_RightCorner before play...
+[2016.03.22-12.59.38:741][918]LogPlayLevel: PlayLevel: Blueprint regeneration took 705 ms (8 blueprints)
+[2016.03.22-12.59.38:769][918]PIE: New page: PIE session: RunBlankMode (Mar 22, 2016, 2:59:38 PM)
+[2016.03.22-12.59.38:769][918]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.59.38:771][918]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001615s)
+[2016.03.22-12.59.38:783][918]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.59.38:783][918]LogPlayLevel: PIE: World Init took: (0.011918s)
+[2016.03.22-12.59.38:783][918]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.013736s)
+[2016.03.22-12.59.38:813][918]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.03.22-12.59.38:822][918]LogInit: FAudioDevice initialized.
+[2016.03.22-12.59.38:927][918]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.59.38:929][918]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.59.38
+[2016.03.22-12.59.38:929][918]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_17 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.59.38:929][918]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_17 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.59.38:930][918]LogWorld: Bringing up level for play took: 0.001380
+[2016.03.22-12.59.38:955][918]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode 0.748
+[2016.03.22-12.59.38:989][919]LogRenderer: Reallocating scene render targets to support 1280x720 (Frame:79309).
+[2016.03.22-12.59.38:995][919]LogCharacterMovement:Warning: GetSimulationTimeStep() - Max iterations 8 hit while remaining time 0.065819 > MaxSimulationTimeStep (0.050) for 'RunCharacter_C_21'
+[2016.03.22-12.59.42:016][173]Cmd: RestartLevel
+[2016.03.22-12.59.42:029][174]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
+[2016.03.22-12.59.42:032][174]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
+[2016.03.22-12.59.42:062][174]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FC3727560
+[2016.03.22-12.59.42:063][174]Cmd: MEM
+[2016.03.22-12.59.42:088][174]LogMemory: Platform Memory Stats for Windows
+[2016.03.22-12.59.42:088][174]LogMemory: Process Physical Memory: 1085.81 MB used, 1400.82 MB peak
+[2016.03.22-12.59.42:088][174]LogMemory: Process Virtual Memory: 2557.67 MB used, 2711.67 MB peak
+[2016.03.22-12.59.42:088][174]LogMemory: Physical Memory: 6756.79 MB used, 8028.31 MB total
+[2016.03.22-12.59.42:088][174]LogMemory: Virtual Memory: 3377.50 MB used, 134217728.00 MB total
+[2016.03.22-12.59.42:088][174]LogMemory: 
+[2016.03.22-12.59.42:088][174]Allocator Stats for TBB: (not implemented)
+[2016.03.22-12.59.42:088][174]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.59.42:090][174]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001560s)
+[2016.03.22-12.59.42:090][174]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.59.42:090][174]LogPlayLevel: PIE: World Init took: (0.000731s)
+[2016.03.22-12.59.42:091][174]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002523s)
+[2016.03.22-12.59.42:091][174]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.59.42:093][174]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.59.42
+[2016.03.22-12.59.42:093][174]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_18 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.59.42:093][174]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_18 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.59.42:093][174]LogWorld: Bringing up level for play took: 0.001480
+[2016.03.22-12.59.48:167][676]Cmd: RestartLevel
+[2016.03.22-12.59.48:181][677]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
+[2016.03.22-12.59.48:185][677]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
+[2016.03.22-12.59.48:216][677]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000240235C9F80
+[2016.03.22-12.59.48:217][677]Cmd: MEM
+[2016.03.22-12.59.48:239][677]LogMemory: Platform Memory Stats for Windows
+[2016.03.22-12.59.48:239][677]LogMemory: Process Physical Memory: 1083.97 MB used, 1400.82 MB peak
+[2016.03.22-12.59.48:239][677]LogMemory: Process Virtual Memory: 2490.12 MB used, 2711.67 MB peak
+[2016.03.22-12.59.48:239][677]LogMemory: Physical Memory: 6752.35 MB used, 8028.31 MB total
+[2016.03.22-12.59.48:239][677]LogMemory: Virtual Memory: 3345.25 MB used, 134217728.00 MB total
+[2016.03.22-12.59.48:239][677]LogMemory: 
+[2016.03.22-12.59.48:239][677]Allocator Stats for TBB: (not implemented)
+[2016.03.22-12.59.48:239][677]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.59.48:241][677]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001809s)
+[2016.03.22-12.59.48:241][677]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.59.48:242][677]LogPlayLevel: PIE: World Init took: (0.000818s)
+[2016.03.22-12.59.48:242][677]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002867s)
+[2016.03.22-12.59.48:242][677]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.59.48:244][677]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.59.48
+[2016.03.22-12.59.48:244][677]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_19 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.59.48:244][677]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_19 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.59.48:244][677]LogWorld: Bringing up level for play took: 0.001379
+[2016.03.22-12.59.50:308][852]Cmd: RestartLevel
+[2016.03.22-12.59.50:322][853]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
+[2016.03.22-12.59.50:326][853]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
+[2016.03.22-12.59.50:353][853]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000240235CB9C0
+[2016.03.22-12.59.50:353][853]Cmd: MEM
+[2016.03.22-12.59.50:375][853]LogMemory: Platform Memory Stats for Windows
+[2016.03.22-12.59.50:375][853]LogMemory: Process Physical Memory: 1088.83 MB used, 1400.82 MB peak
+[2016.03.22-12.59.50:375][853]LogMemory: Process Virtual Memory: 2538.64 MB used, 2711.67 MB peak
+[2016.03.22-12.59.50:375][853]LogMemory: Physical Memory: 6756.11 MB used, 8028.31 MB total
+[2016.03.22-12.59.50:375][853]LogMemory: Virtual Memory: 3353.25 MB used, 134217728.00 MB total
+[2016.03.22-12.59.50:375][853]LogMemory: 
+[2016.03.22-12.59.50:375][853]Allocator Stats for TBB: (not implemented)
+[2016.03.22-12.59.50:375][853]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-12.59.50:377][853]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001889s)
+[2016.03.22-12.59.50:378][853]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-12.59.50:378][853]LogPlayLevel: PIE: World Init took: (0.001623s)
+[2016.03.22-12.59.50:379][853]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.003846s)
+[2016.03.22-12.59.50:379][853]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-12.59.50:381][853]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-13.59.50
+[2016.03.22-12.59.50:381][853]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_20 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.59.50:382][853]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_20 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-12.59.50:382][853]LogWorld: Bringing up level for play took: 0.001712
+[2016.03.22-13.00.01:259][758]Cmd: RestartLevel
+[2016.03.22-13.00.01:270][759]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
+[2016.03.22-13.00.01:273][759]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
+[2016.03.22-13.00.01:303][759]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000024024C5DD00
+[2016.03.22-13.00.01:303][759]Cmd: MEM
+[2016.03.22-13.00.01:327][759]LogMemory: Platform Memory Stats for Windows
+[2016.03.22-13.00.01:327][759]LogMemory: Process Physical Memory: 1086.62 MB used, 1400.82 MB peak
+[2016.03.22-13.00.01:327][759]LogMemory: Process Virtual Memory: 2469.08 MB used, 2711.67 MB peak
+[2016.03.22-13.00.01:327][759]LogMemory: Physical Memory: 6735.34 MB used, 8028.31 MB total
+[2016.03.22-13.00.01:327][759]LogMemory: Virtual Memory: 3345.25 MB used, 134217728.00 MB total
+[2016.03.22-13.00.01:327][759]LogMemory: 
+[2016.03.22-13.00.01:327][759]Allocator Stats for TBB: (not implemented)
+[2016.03.22-13.00.01:327][759]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-13.00.01:328][759]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001440s)
+[2016.03.22-13.00.01:329][759]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-13.00.01:329][759]LogPlayLevel: PIE: World Init took: (0.000778s)
+[2016.03.22-13.00.01:329][759]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002476s)
+[2016.03.22-13.00.01:329][759]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-13.00.01:331][759]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-14.00.01
+[2016.03.22-13.00.01:331][759]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_21 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.00.01:331][759]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_21 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.00.01:331][759]LogWorld: Bringing up level for play took: 0.001055
+[2016.03.22-13.00.08:228][336]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000024024C5C4A0
+[2016.03.22-13.00.34:248][609]LogEditorTransaction: Undo Modify Component(s)
+[2016.03.22-13.00.38:603][951]LogSavePackage: Save=33.001530ms
+[2016.03.22-13.00.38:603][951]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_Gap037734A241E5DF23D7CF48827E6CAEF6.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset'
+[2016.03.22-13.00.38:605][951]LogSavePackage: Total save time: 40.053833ms
+[2016.03.22-13.00.38:605][951]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset
+[2016.03.22-13.00.38:709][951]LogSavePackage: Save=78.340233ms
+[2016.03.22-13.00.38:709][951]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIleB59B18534B24901E8AC15490D50AD17C.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset'
+[2016.03.22-13.00.38:713][951]LogSavePackage: Total save time: 87.344028ms
+[2016.03.22-13.00.38:713][951]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset
+[2016.03.22-13.00.39:896][ 48]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.03.22-13.00.39:903][ 48]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle before play...
+[2016.03.22-13.00.39:970][ 48]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'TurnZone' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_LeftCorner_C_313' (it may have been removed)
+[2016.03.22-13.00.39:999][ 48]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Ramp' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RampDown_C_317' (it may have been removed)
+[2016.03.22-13.00.40:026][ 48]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Ramp' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RampUp_C_321' (it may have been removed)
+[2016.03.22-13.00.40:055][ 48]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'TurnZone' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RightCorner_C_325' (it may have been removed)
+[2016.03.22-13.00.40:287][ 48]LogPlayLevel: PlayLevel: Blueprint regeneration took 390 ms (7 blueprints)
+[2016.03.22-13.00.40:291][ 48]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_Gap before play...
+[2016.03.22-13.00.40:337][ 48]LogPlayLevel: PlayLevel: Blueprint regeneration took 441 ms (7 blueprints)
+[2016.03.22-13.00.40:338][ 48]LogPlayLevel: [PlayLevel] Compiling RunGameMode before play...
+[2016.03.22-13.00.40:394][ 48]LogPlayLevel: PlayLevel: Blueprint regeneration took 498 ms (7 blueprints)
+[2016.03.22-13.00.40:395][ 48]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_LeftCorner before play...
+[2016.03.22-13.00.40:432][ 48]LogPlayLevel: PlayLevel: Blueprint regeneration took 535 ms (7 blueprints)
+[2016.03.22-13.00.40:432][ 48]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_RampDown before play...
+[2016.03.22-13.00.40:468][ 48]LogPlayLevel: PlayLevel: Blueprint regeneration took 571 ms (7 blueprints)
+[2016.03.22-13.00.40:468][ 48]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_RampUp before play...
+[2016.03.22-13.00.40:504][ 48]LogPlayLevel: PlayLevel: Blueprint regeneration took 608 ms (7 blueprints)
+[2016.03.22-13.00.40:504][ 48]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_RightCorner before play...
+[2016.03.22-13.00.40:543][ 48]LogPlayLevel: PlayLevel: Blueprint regeneration took 646 ms (7 blueprints)
+[2016.03.22-13.00.40:572][ 48]PIE: New page: PIE session: RunBlankMode (Mar 22, 2016, 3:00:40 PM)
+[2016.03.22-13.00.40:572][ 48]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-13.00.40:574][ 48]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001356s)
+[2016.03.22-13.00.40:574][ 48]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-13.00.40:574][ 48]LogPlayLevel: PIE: World Init took: (0.000701s)
+[2016.03.22-13.00.40:575][ 48]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002303s)
+[2016.03.22-13.00.40:605][ 48]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.03.22-13.00.40:615][ 48]LogInit: FAudioDevice initialized.
+[2016.03.22-13.00.40:694][ 48]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-13.00.40:697][ 48]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-14.00.40
+[2016.03.22-13.00.40:697][ 48]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_22 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.00.40:697][ 48]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_22 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.00.40:698][ 48]LogWorld: Bringing up level for play took: 0.002033
+[2016.03.22-13.00.40:749][ 48]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode 0.542
+[2016.03.22-13.00.40:803][ 49]LogCharacterMovement:Warning: GetSimulationTimeStep() - Max iterations 8 hit while remaining time 0.066815 > MaxSimulationTimeStep (0.050) for 'RunCharacter_C_26'
+[2016.03.22-13.00.43:787][261]Cmd: RestartLevel
+[2016.03.22-13.00.43:800][262]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
+[2016.03.22-13.00.43:804][262]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
+[2016.03.22-13.00.43:836][262]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023F898A7A60
+[2016.03.22-13.00.43:836][262]Cmd: MEM
+[2016.03.22-13.00.43:859][262]LogMemory: Platform Memory Stats for Windows
+[2016.03.22-13.00.43:860][262]LogMemory: Process Physical Memory: 1106.36 MB used, 1400.82 MB peak
+[2016.03.22-13.00.43:860][262]LogMemory: Process Virtual Memory: 2522.90 MB used, 2711.67 MB peak
+[2016.03.22-13.00.43:860][262]LogMemory: Physical Memory: 6795.65 MB used, 8028.31 MB total
+[2016.03.22-13.00.43:860][262]LogMemory: Virtual Memory: 3341.95 MB used, 134217728.00 MB total
+[2016.03.22-13.00.43:860][262]LogMemory: 
+[2016.03.22-13.00.43:860][262]Allocator Stats for TBB: (not implemented)
+[2016.03.22-13.00.43:860][262]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-13.00.43:862][262]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001823s)
+[2016.03.22-13.00.43:862][262]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-13.00.43:862][262]LogPlayLevel: PIE: World Init took: (0.000599s)
+[2016.03.22-13.00.43:862][262]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002633s)
+[2016.03.22-13.00.43:862][262]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-13.00.43:864][262]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-14.00.43
+[2016.03.22-13.00.43:865][262]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_23 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.00.43:865][262]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_23 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.00.43:865][262]LogWorld: Bringing up level for play took: 0.001448
+[2016.03.22-13.00.47:008][481]Cmd: RestartLevel
+[2016.03.22-13.00.47:022][482]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
+[2016.03.22-13.00.47:027][482]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
+[2016.03.22-13.00.47:057][482]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002401C877420
+[2016.03.22-13.00.47:057][482]Cmd: MEM
+[2016.03.22-13.00.47:082][482]LogMemory: Platform Memory Stats for Windows
+[2016.03.22-13.00.47:082][482]LogMemory: Process Physical Memory: 1107.74 MB used, 1400.82 MB peak
+[2016.03.22-13.00.47:082][482]LogMemory: Process Virtual Memory: 2526.17 MB used, 2711.67 MB peak
+[2016.03.22-13.00.47:082][482]LogMemory: Physical Memory: 6794.64 MB used, 8028.31 MB total
+[2016.03.22-13.00.47:082][482]LogMemory: Virtual Memory: 3385.95 MB used, 134217728.00 MB total
+[2016.03.22-13.00.47:082][482]LogMemory: 
+[2016.03.22-13.00.47:082][482]Allocator Stats for TBB: (not implemented)
+[2016.03.22-13.00.47:082][482]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-13.00.47:084][482]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001651s)
+[2016.03.22-13.00.47:085][482]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-13.00.47:085][482]LogPlayLevel: PIE: World Init took: (0.000743s)
+[2016.03.22-13.00.47:085][482]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002606s)
+[2016.03.22-13.00.47:085][482]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-13.00.47:087][482]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-14.00.47
+[2016.03.22-13.00.47:087][482]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_24 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.00.47:087][482]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_24 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.00.47:087][482]LogWorld: Bringing up level for play took: 0.001463
+[2016.03.22-13.00.59:968][384]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FA4FFE980
+[2016.03.22-13.01.13:346][533]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.03.22-13.01.13:349][533]LogPlayLevel: [PlayLevel] Compiling RunHUD before play...
+[2016.03.22-13.01.13:362][533]LogBlueprint:Warning: [compiler RunHUD] Warning ReturnNode Exec pin has no connections on  EdGraphPin_6287 
+[2016.03.22-13.01.13:363][533]LogBlueprint:Error: [compiler RunHUD] Error Binding: Property ' TextDelegate ' on Widget ' TextBlock_113 ': Member:GetText_0 Has the wrong number of arguments, it needs to return 1 value and take no parameters.
+[2016.03.22-13.01.13:437][533]LogBlueprint:Warning: [compiler RunHUD] Warning [0920.66] Compile of RunHUD failed. 1 Fatal Issue(s) 1 Warning(s) [in 85 ms]
+[2016.03.22-13.01.13:437][533]LogBlueprint:Warning: [compiler RunHUD] Warning [0920.66] Compile of RunHUD failed. 1 Fatal Issue(s) 2 Warning(s) [in 0 ms]
+[2016.03.22-13.01.13:437][533]LogBlueprint:Warning: [compiler RunHUD] Warning [0920.66] Compile of RunHUD failed. 1 Fatal Issue(s) 3 Warning(s) [in 0 ms]
+[2016.03.22-13.01.13:437][533]LogBlueprint:Warning: [compiler RunHUD] Warning [0920.66] Compile of RunHUD failed. 1 Fatal Issue(s) 4 Warning(s) [in 0 ms]
+[2016.03.22-13.01.13:440][533]LogBlueprint:Warning: [compiler RunHUD] Warning [0920.67] Compile of RunHUD failed. 1 Fatal Issue(s) 5 Warning(s) [in 2 ms]
+[2016.03.22-13.01.13:440][533]LogBlueprint:Warning: [compiler RunHUD] Warning [0920.67] Compile of RunHUD failed. 1 Fatal Issue(s) 6 Warning(s) [in 0 ms]
+[2016.03.22-13.01.13:440][533]LogPlayLevel: PlayLevel: Blueprint regeneration took 94 ms (2 blueprints)
+[2016.03.22-13.01.13:441][533]LogPlayLevel: [PlayLevel] Compiling RunGameMode before play...
+[2016.03.22-13.01.13:500][533]LogPlayLevel: PlayLevel: Blueprint regeneration took 154 ms (3 blueprints)
+[2016.03.22-13.01.13:506][533]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle before play...
+[2016.03.22-13.01.13:582][533]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'TurnZone' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_LeftCorner_C_370' (it may have been removed)
+[2016.03.22-13.01.13:610][533]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Ramp' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RampDown_C_374' (it may have been removed)
+[2016.03.22-13.01.13:638][533]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Ramp' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RampUp_C_378' (it may have been removed)
+[2016.03.22-13.01.13:668][533]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'TurnZone' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RightCorner_C_382' (it may have been removed)
+[2016.03.22-13.01.13:890][533]LogPlayLevel: PlayLevel: Blueprint regeneration took 544 ms (8 blueprints)
+[2016.03.22-13.01.13:895][533]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_Gap before play...
+[2016.03.22-13.01.13:940][533]LogPlayLevel: PlayLevel: Blueprint regeneration took 594 ms (8 blueprints)
+[2016.03.22-13.01.13:941][533]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_LeftCorner before play...
+[2016.03.22-13.01.13:981][533]LogPlayLevel: PlayLevel: Blueprint regeneration took 636 ms (8 blueprints)
+[2016.03.22-13.01.13:982][533]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_RampDown before play...
+[2016.03.22-13.01.14:018][533]LogPlayLevel: PlayLevel: Blueprint regeneration took 672 ms (8 blueprints)
+[2016.03.22-13.01.14:018][533]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_RampUp before play...
+[2016.03.22-13.01.14:052][533]LogPlayLevel: PlayLevel: Blueprint regeneration took 706 ms (8 blueprints)
+[2016.03.22-13.01.14:052][533]LogPlayLevel: [PlayLevel] Compiling BP_FloorTIle_RightCorner before play...
+[2016.03.22-13.01.14:090][533]LogPlayLevel: PlayLevel: Blueprint regeneration took 744 ms (8 blueprints)
+[2016.03.22-13.01.14:117][533]BlueprintLog: Info Blueprint RunHUD failed to compile
+[2016.03.22-13.01.15:278][533]PIE: New page: PIE session: RunBlankMode (Mar 22, 2016, 3:01:15 PM)
+[2016.03.22-13.01.15:278][533]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-13.01.15:281][533]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002783s)
+[2016.03.22-13.01.15:282][533]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-13.01.15:282][533]LogPlayLevel: PIE: World Init took: (0.000958s)
+[2016.03.22-13.01.15:282][533]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.004103s)
+[2016.03.22-13.01.15:310][533]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.03.22-13.01.15:319][533]LogInit: FAudioDevice initialized.
+[2016.03.22-13.01.15:413][533]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-13.01.15:417][533]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-14.01.15
+[2016.03.22-13.01.15:417][533]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_25 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.01.15:417][533]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_25 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.01.15:417][533]LogWorld: Bringing up level for play took: 0.001688
+[2016.03.22-13.01.15:461][533]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode 1.254
+[2016.03.22-13.01.17:086][653]Cmd: RestartLevel
+[2016.03.22-13.01.17:098][654]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
+[2016.03.22-13.01.17:101][654]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
+[2016.03.22-13.01.17:129][654]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FF1FD02C0
+[2016.03.22-13.01.17:129][654]Cmd: MEM
+[2016.03.22-13.01.17:153][654]LogMemory: Platform Memory Stats for Windows
+[2016.03.22-13.01.17:153][654]LogMemory: Process Physical Memory: 1145.58 MB used, 1400.82 MB peak
+[2016.03.22-13.01.17:153][654]LogMemory: Process Virtual Memory: 2569.32 MB used, 2711.67 MB peak
+[2016.03.22-13.01.17:153][654]LogMemory: Physical Memory: 6863.72 MB used, 8028.31 MB total
+[2016.03.22-13.01.17:153][654]LogMemory: Virtual Memory: 3374.40 MB used, 134217728.00 MB total
+[2016.03.22-13.01.17:154][654]LogMemory: 
+[2016.03.22-13.01.17:154][654]Allocator Stats for TBB: (not implemented)
+[2016.03.22-13.01.17:154][654]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-13.01.17:155][654]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001568s)
+[2016.03.22-13.01.17:156][654]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-13.01.17:156][654]LogPlayLevel: PIE: World Init took: (0.000674s)
+[2016.03.22-13.01.17:156][654]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002455s)
+[2016.03.22-13.01.17:156][654]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-13.01.17:158][654]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-14.01.17
+[2016.03.22-13.01.17:158][654]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_26 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.01.17:159][654]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_26 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.01.17:159][654]LogWorld: Bringing up level for play took: 0.001525
+[2016.03.22-13.01.19:097][798]Cmd: RestartLevel
+[2016.03.22-13.01.19:109][799]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
+[2016.03.22-13.01.19:114][799]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
+[2016.03.22-13.01.19:142][799]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023F89770220
+[2016.03.22-13.01.19:142][799]Cmd: MEM
+[2016.03.22-13.01.19:166][799]LogMemory: Platform Memory Stats for Windows
+[2016.03.22-13.01.19:166][799]LogMemory: Process Physical Memory: 1147.09 MB used, 1400.82 MB peak
+[2016.03.22-13.01.19:166][799]LogMemory: Process Virtual Memory: 2619.90 MB used, 2711.67 MB peak
+[2016.03.22-13.01.19:166][799]LogMemory: Physical Memory: 6869.73 MB used, 8028.31 MB total
+[2016.03.22-13.01.19:166][799]LogMemory: Virtual Memory: 3413.40 MB used, 134217728.00 MB total
+[2016.03.22-13.01.19:166][799]LogMemory: 
+[2016.03.22-13.01.19:166][799]Allocator Stats for TBB: (not implemented)
+[2016.03.22-13.01.19:166][799]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-13.01.19:168][799]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001523s)
+[2016.03.22-13.01.19:169][799]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-13.01.19:169][799]LogPlayLevel: PIE: World Init took: (0.000686s)
+[2016.03.22-13.01.19:169][799]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002420s)
+[2016.03.22-13.01.19:169][799]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-13.01.19:171][799]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-14.01.19
+[2016.03.22-13.01.19:171][799]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_27 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.01.19:171][799]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_27 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.01.19:171][799]LogWorld: Bringing up level for play took: 0.001367
+[2016.03.22-13.01.27:422][408]Cmd: RestartLevel
+[2016.03.22-13.01.27:435][409]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
+[2016.03.22-13.01.27:438][409]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
+[2016.03.22-13.01.27:469][409]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FB654BA60
+[2016.03.22-13.01.27:469][409]Cmd: MEM
+[2016.03.22-13.01.27:495][409]LogMemory: Platform Memory Stats for Windows
+[2016.03.22-13.01.27:495][409]LogMemory: Process Physical Memory: 1147.05 MB used, 1400.82 MB peak
+[2016.03.22-13.01.27:495][409]LogMemory: Process Virtual Memory: 2561.08 MB used, 2711.67 MB peak
+[2016.03.22-13.01.27:495][409]LogMemory: Physical Memory: 6873.29 MB used, 8028.31 MB total
+[2016.03.22-13.01.27:495][409]LogMemory: Virtual Memory: 3381.40 MB used, 134217728.00 MB total
+[2016.03.22-13.01.27:495][409]LogMemory: 
+[2016.03.22-13.01.27:495][409]Allocator Stats for TBB: (not implemented)
+[2016.03.22-13.01.27:495][409]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-13.01.27:497][409]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001582s)
+[2016.03.22-13.01.27:498][409]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-13.01.27:498][409]LogPlayLevel: PIE: World Init took: (0.000761s)
+[2016.03.22-13.01.27:498][409]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002641s)
+[2016.03.22-13.01.27:498][409]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-13.01.27:500][409]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-14.01.27
+[2016.03.22-13.01.27:500][409]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_28 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.01.27:500][409]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_28 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.01.27:500][409]LogWorld: Bringing up level for play took: 0.001236
+[2016.03.22-13.01.29:423][556]Cmd: RestartLevel
+[2016.03.22-13.01.29:435][557]LogNet: Browse: /Game/ThirdPersonBP/Maps/RunBlankMode?restart
+[2016.03.22-13.01.29:439][557]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/RunBlankMode
+[2016.03.22-13.01.29:468][557]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000023FB6548400
+[2016.03.22-13.01.29:469][557]Cmd: MEM
+[2016.03.22-13.01.29:493][557]LogMemory: Platform Memory Stats for Windows
+[2016.03.22-13.01.29:493][557]LogMemory: Process Physical Memory: 1149.05 MB used, 1400.82 MB peak
+[2016.03.22-13.01.29:493][557]LogMemory: Process Virtual Memory: 2627.29 MB used, 2711.67 MB peak
+[2016.03.22-13.01.29:493][557]LogMemory: Physical Memory: 6872.99 MB used, 8028.31 MB total
+[2016.03.22-13.01.29:493][557]LogMemory: Virtual Memory: 3424.40 MB used, 134217728.00 MB total
+[2016.03.22-13.01.29:493][557]LogMemory: 
+[2016.03.22-13.01.29:493][557]Allocator Stats for TBB: (not implemented)
+[2016.03.22-13.01.29:493][557]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-13.01.29:494][557]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001663s)
+[2016.03.22-13.01.29:495][557]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-13.01.29:495][557]LogPlayLevel: PIE: World Init took: (0.000735s)
+[2016.03.22-13.01.29:495][557]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.002677s)
+[2016.03.22-13.01.29:495][557]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-13.01.29:498][557]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-14.01.29
+[2016.03.22-13.01.29:498][557]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_29 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.01.29:498][557]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_29 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.01.29:498][557]LogWorld: Bringing up level for play took: 0.001303
+[2016.03.22-13.01.44:796][647]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002400DF6AFC0
+[2016.03.22-13.01.54:688][478]LogSavePackage: Save=18.704929ms
+[2016.03.22-13.01.54:688][478]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/RunHUD4B64E0F14B385F6452162E8A8D138602.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/UMG/RunHUD.uasset'
+[2016.03.22-13.01.54:690][478]LogSavePackage: Total save time: 22.911016ms
+[2016.03.22-13.01.54:690][478]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/UMG/RunHUD.uasset
+[2016.03.22-13.01.55:992][590]BlueprintLog: New page: Compile RunHUD
+[2016.03.22-13.01.56:069][590]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  Cast Failed 
+[2016.03.22-13.01.56:069][590]BlueprintEditorCompileResults: Info [0963.29] Compile of RunHUD successful! [in 76 ms]
+[2016.03.22-13.01.57:002][667]LogSavePackage: Save=13.868313ms
+[2016.03.22-13.01.57:002][667]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/RunHUDBF30C9864ACF72FEDAA6538BFA65C82F.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/UMG/RunHUD.uasset'
+[2016.03.22-13.01.57:003][667]LogSavePackage: Total save time: 17.104160ms
+[2016.03.22-13.01.57:003][667]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/UMG/RunHUD.uasset
+[2016.03.22-13.02.04:201][226]LogEditorTransaction: Undo Modify Component(s)
+[2016.03.22-13.02.42:228][150]BlueprintLog: New page: Compile BP_FloorTIle
+[2016.03.22-13.02.42:319][150]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'TurnZone' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_LeftCorner_C_432' (it may have been removed)
+[2016.03.22-13.02.42:350][150]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Ramp' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RampDown_C_436' (it may have been removed)
+[2016.03.22-13.02.42:378][150]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Ramp' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RampUp_C_440' (it may have been removed)
+[2016.03.22-13.02.42:408][150]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'TurnZone' in BlueprintGeneratedClass 'REINST_BP_FloorTIle_RightCorner_C_444' (it may have been removed)
+[2016.03.22-13.02.42:679][150]BlueprintEditorCompileResults: Info [1009.91] Compile of BP_FloorTIle successful! [in 451 ms]
+[2016.03.22-13.02.43:513][202]LogSavePackage: Save=79.889809ms
+[2016.03.22-13.02.43:513][202]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle0DD1CCB44AE65F7A3238CE9D458E47DB.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset'
+[2016.03.22-13.02.43:516][202]LogSavePackage: Total save time: 84.658328ms
+[2016.03.22-13.02.43:516][202]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle.uasset
+[2016.03.22-13.03.11:666][145]LogEditorTransaction: Undo Modify Component(s)
+[2016.03.22-13.03.13:452][253]LogSavePackage: Save=33.903934ms
+[2016.03.22-13.03.13:452][253]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_GapAB21DEFA48C651712AB55B9FAE3E9467.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset'
+[2016.03.22-13.03.13:453][253]LogSavePackage: Total save time: 39.635528ms
+[2016.03.22-13.03.13:453][253]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset
+[2016.03.22-13.03.14:222][305]BlueprintLog: New page: Compile BP_FloorTIle_Gap
+[2016.03.22-13.03.14:310][305]BlueprintEditorCompileResults: Info [1041.54] Compile of BP_FloorTIle_Gap successful! [in 87 ms]
+[2016.03.22-13.03.14:884][336]LogSavePackage: Save=32.608059ms
+[2016.03.22-13.03.14:884][336]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_GapC1070967438A82711F9F0196D20ED1DA.tmp' to '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset'
+[2016.03.22-13.03.14:886][336]LogSavePackage: Total save time: 37.711173ms
+[2016.03.22-13.03.14:886][336]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Content/ThirdPersonBP/Blueprints/BP_FloorTIle_Gap.uasset
+[2016.03.22-13.03.16:722][455]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.03.22-13.03.16:722][455]PIE: New page: PIE session: RunBlankMode (Mar 22, 2016, 3:03:16 PM)
+[2016.03.22-13.03.16:722][455]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode
+[2016.03.22-13.03.16:724][455]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001691s)
+[2016.03.22-13.03.16:725][455]LogAIModule: Creating AISystem for world RunBlankMode
+[2016.03.22-13.03.16:725][455]LogPlayLevel: PIE: World Init took: (0.001106s)
+[2016.03.22-13.03.16:725][455]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/RunBlankMode.RunBlankMode to /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode (0.003075s)
+[2016.03.22-13.03.16:759][455]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.03.22-13.03.16:768][455]LogInit: FAudioDevice initialized.
+[2016.03.22-13.03.16:803][455]LogWorld: Game class is 'RunGameMode_C'
+[2016.03.22-13.03.16:805][455]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode up for play (max tick rate 0) at 2016.03.22-14.03.16
+[2016.03.22-13.03.16:806][455]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameSession_30 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.03.16:806][455]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode.RunBlankMode:PersistentLevel.GameNetworkManager_30 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.03.22-13.03.16:806][455]LogWorld: Bringing up level for play took: 0.001464
+[2016.03.22-13.03.16:827][455]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_RunBlankMode 0.621
+[2016.03.22-13.03.20:485][690]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000024033EA2160
+[2016.03.22-13.03.44:820][318]BlueprintLog: New page: Compile BP_FloorTIle_Gap
+[2016.03.22-13.03.44:904][318]BlueprintEditorCompileResults: Info [1072.13] Compile of BP_FloorTIle_Gap successful! [in 84 ms]
+[2016.03.22-13.03.45:568][353]LogSavePackage: Save=34.329918ms
+[2016.03.22-13.03.45:568][353]LogSavePackage: Moving '../../../../../../Users/Mkanzildiy/Documents/GitHub/UnrealEngineGameNr1/Runner/RunGameProto/Saved/BP_FloorTIle_Gap15A9EB9C4F4434006814
